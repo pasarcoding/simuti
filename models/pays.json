@@ -1,0 +1,132 @@
+{
+    "data": [
+        {
+            "date": "2024-01-25 11:04:06",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "003674761154",
+            "description": "Bank BNI Top Up",
+            "amount": "600114.00"
+        },
+        {
+            "date": "2024-01-24 19:38:04",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank BRI Top Up",
+            "amount": "100047.00"
+        },
+        {
+            "date": "2024-01-24 18:46:06",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank BRI Top Up",
+            "amount": "100035.00"
+        },
+        {
+            "date": "2024-01-24 18:10:04",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Transfer Dari Diva Safinazah Transfer Masuk",
+            "amount": "200027.00"
+        },
+        {
+            "date": "2024-01-24 13:32:04",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Transfer Dari Abhista Abhinaya Nareswari Transfer Masuk",
+            "amount": "100032.00"
+        },
+        {
+            "date": "2024-01-23 18:15:04",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Transfer Dari RIXZA GHULAM YAMSASSNI K.M Transfer Masuk",
+            "amount": "200009.00"
+        },
+        {
+            "date": "2024-01-23 15:58:22",
+            "type": "K",
+            "module": "bdmn",
+            "accountnumber": "003674761154",
+            "description": "Setor tunai\/Cash Deposit",
+            "amount": "500000.00"
+        },
+        {
+            "date": "2024-01-23 14:37:06",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank BRI Top Up",
+            "amount": "200029.00"
+        },
+        {
+            "date": "2024-01-22 19:46:07",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank BCA Top Up",
+            "amount": "200038.00"
+        },
+        {
+            "date": "2024-01-22 13:13:46",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank CIMB Top Up",
+            "amount": "250020.00"
+        },
+        {
+            "date": "2024-01-22 09:14:06",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank Mandiri Top Up",
+            "amount": "200053.00"
+        },
+        {
+            "date": "2024-01-21 14:30:04",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank Mandiri Top Up",
+            "amount": "100003.00"
+        },
+        {
+            "date": "2024-01-21 06:43:03",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Transfer Dari NUR IZZA FITRIA Transfer Masuk",
+            "amount": "200010.00"
+        },
+        {
+            "date": "2024-01-21 06:21:04",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Transfer Dari Rio Candra Wijaya Transfer Masuk",
+            "amount": "100054.00"
+        },
+        {
+            "date": "2024-01-21 03:00:05",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank BCA Top Up",
+            "amount": "500026.00"
+        },
+        {
+            "date": "2024-01-21 03:00:05",
+            "type": "K",
+            "module": "ovo",
+            "accountnumber": "081259806012",
+            "description": "Bank BRI Top Up",
+            "amount": "400005.00"
+        }
+    ]
+}

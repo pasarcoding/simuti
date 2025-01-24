@@ -1,0 +1,18 @@
+[18-Feb-2024 12:11:06 Asia/Jakarta] PHP Warning:  include_once(../config/conn.php): failed to open stream: No such file or directory in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:11:06 Asia/Jakarta] PHP Warning:  include_once(): Failed opening '../config/conn.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:11:06 Asia/Jakarta] PHP Notice:  Undefined variable: koneksi in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 67
+[18-Feb-2024 12:12:11 Asia/Jakarta] PHP Warning:  include_once(../config/conn.php): failed to open stream: No such file or directory in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:12:11 Asia/Jakarta] PHP Warning:  include_once(): Failed opening '../config/conn.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:12:11 Asia/Jakarta] PHP Notice:  Undefined variable: koneksi in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 67
+[18-Feb-2024 12:13:18 Asia/Jakarta] PHP Warning:  include_once(../config/conn.php): failed to open stream: No such file or directory in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:13:18 Asia/Jakarta] PHP Warning:  include_once(): Failed opening '../config/conn.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:13:18 Asia/Jakarta] PHP Notice:  Undefined variable: koneksi in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 67
+[18-Feb-2024 12:13:46 Asia/Jakarta] PHP Warning:  include_once(../config/conn.php): failed to open stream: No such file or directory in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:13:46 Asia/Jakarta] PHP Warning:  include_once(): Failed opening '../config/conn.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:13:46 Asia/Jakarta] PHP Notice:  Undefined variable: koneksi in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 67
+[18-Feb-2024 12:14:06 Asia/Jakarta] PHP Warning:  include_once(../config/conn.php): failed to open stream: No such file or directory in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:14:06 Asia/Jakarta] PHP Warning:  include_once(): Failed opening '../config/conn.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 12:14:06 Asia/Jakarta] PHP Notice:  Undefined variable: koneksi in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 67
+[18-Feb-2024 16:58:40 Asia/Jakarta] PHP Warning:  include_once(../config/conn.php): failed to open stream: No such file or directory in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 16:58:40 Asia/Jakarta] PHP Warning:  include_once(): Failed opening '../config/conn.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 2
+[18-Feb-2024 16:58:40 Asia/Jakarta] PHP Notice:  Undefined variable: koneksi in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/models/modelMitra.php on line 67

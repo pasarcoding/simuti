@@ -1,0 +1,428 @@
+[14-Feb-2022 00:18:22 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:18:24 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:20:00 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:20:06 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:20:14 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:21:40 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:21:41 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:21:41 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:24:39 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 00:24:49 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 09:53:57 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 09:54:02 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 09:55:51 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Feb-2022 09:57:29 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans Error (400): {"error_messages":["customer_details.email format is invalid"]} | Request url: https://app.sandbox.midtrans.com/snap/v1/transactions in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php:107
+Stack trace:
+#0 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php(33): Midtrans\SnapApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-M...', Array, true)
+#1 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(86): Midtrans\SnapApiRequestor::post('https://app.san...', 'SB-Mid-server-M...', Array)
+#2 /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(34): Midtrans\Snap::createTransaction(Array)
+#3 /home/jecknweb/spps.jeckivhan.web.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/jecknweb/spps.jeckivhan.web.id/vendor/midtrans/midtrans-php/Midtrans/SnapApiRequestor.php on line 107
+[14-Sep-2023 10:02:29 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:23:48 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:24:04 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:25:53 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:25:54 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:25:54 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:25:55 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:25:55 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:25:55 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:25:55 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:28:02 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:28:05 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:28:14 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:28:34 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:28:55 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:28:56 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:35:33 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:36:14 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:36:15 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:37:45 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 10:44:00 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 11:43:21 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 11:44:28 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 11:45:27 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 11:45:35 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[14-Sep-2023 13:46:49 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 03:58:36 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 03:58:40 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 03:58:48 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 03:58:53 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 03:58:54 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 03:58:57 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 04:00:21 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 04:00:23 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:02 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:05 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:06 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:07 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:07 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:09 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:10 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:10 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:11 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[15-Sep-2023 20:59:23 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 16:56:23 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 16:56:28 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 16:56:29 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:54:10 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:54:11 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:54:11 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:54:12 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:54:12 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:54:12 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:54:12 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:55:10 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:55:49 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:56:53 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:56:55 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:56:56 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:56:56 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:56:57 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:56:57 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:59:56 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:59:58 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 22:59:59 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 23:00:00 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 23:01:36 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 23:01:36 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 23:01:37 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[16-Sep-2023 23:02:48 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[17-Sep-2023 07:46:56 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[17-Sep-2023 07:47:00 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[17-Sep-2023 07:47:09 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[21-Sep-2023 10:57:45 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[21-Sep-2023 10:57:47 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[21-Sep-2023 10:58:10 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[22-Sep-2023 14:45:40 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 14:54:51 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:37 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:40 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:41 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:42 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:42 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:43 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:44 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:44 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 20:50:45 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 21:03:52 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 21:03:53 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 21:03:54 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 21:03:55 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 21:03:55 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[24-Sep-2023 21:03:56 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[27-Sep-2023 15:55:32 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[27-Sep-2023 15:59:29 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[04-Oct-2023 08:49:50 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[04-Oct-2023 08:49:53 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[04-Oct-2023 08:49:56 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[04-Oct-2023 08:49:57 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[05-Oct-2023 08:07:27 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[05-Oct-2023 09:36:36 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[05-Oct-2023 09:36:37 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[05-Oct-2023 09:36:39 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[10-Oct-2023 14:13:39 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[25-Oct-2023 10:48:39 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[01-Nov-2023 20:27:28 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[01-Nov-2023 20:27:30 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[08-Nov-2023 15:02:39 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[08-Nov-2023 15:04:22 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[08-Nov-2023 15:04:23 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[08-Nov-2023 15:04:23 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[09-Nov-2023 09:34:56 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/composer/platform_check.php on line 25
+[29-Nov-2023 10:08:41 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 10:09:10 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 10:09:51 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 62
+[29-Nov-2023 10:09:51 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 63
+[29-Nov-2023 10:09:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 72
+[29-Nov-2023 10:10:58 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 10:13:42 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 62
+[29-Nov-2023 10:13:42 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 63
+[29-Nov-2023 10:13:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 72
+[29-Nov-2023 10:14:28 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 10:14:28 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id sudah digunakan"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[29-Nov-2023 10:14:38 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 10:14:38 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id sudah digunakan"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[29-Nov-2023 10:14:39 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 10:14:39 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id sudah digunakan"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[29-Nov-2023 10:14:41 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 10:14:41 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id sudah digunakan"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[29-Nov-2023 11:58:35 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 11:59:17 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 19:06:10 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 19:07:06 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 62
+[29-Nov-2023 19:07:06 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 63
+[29-Nov-2023 19:07:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 72
+[29-Nov-2023 19:27:28 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 19:29:15 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 62
+[29-Nov-2023 19:29:15 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 63
+[29-Nov-2023 19:29:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 72
+[29-Nov-2023 19:29:19 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[29-Nov-2023 19:29:21 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id sudah digunakan"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[29-Nov-2023 19:32:45 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[30-Nov-2023 15:38:12 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[01-Dec-2023 13:59:22 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[04-Dec-2023 20:28:17 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[10-Dec-2023 06:42:05 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[10-Dec-2023 07:10:43 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[10-Dec-2023 07:12:05 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 62
+[10-Dec-2023 07:12:05 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 63
+[10-Dec-2023 07:12:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 72
+[11-Dec-2023 09:32:17 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Dec-2023 09:40:36 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[03-Jan-2024 13:02:17 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[03-Jan-2024 13:12:50 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[23-Jun-2024 07:55:15 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[23-Jun-2024 07:58:34 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 73
+[23-Jun-2024 07:58:34 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 74
+[23-Jun-2024 07:58:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php:83
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 83
+[23-Jun-2024 08:01:08 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[23-Jun-2024 08:01:40 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 73
+[23-Jun-2024 08:01:40 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 74
+[23-Jun-2024 08:01:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php:83
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 83
+[23-Jun-2024 08:01:47 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[23-Jun-2024 08:01:48 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id has already been taken"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[23-Jun-2024 08:01:51 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[23-Jun-2024 08:01:51 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id has already been taken"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[23-Jun-2024 08:04:51 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[23-Jun-2024 08:05:17 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 73
+[23-Jun-2024 08:05:17 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 74
+[23-Jun-2024 08:05:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php:83
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/success.php on line 83
+[23-Jun-2024 08:05:54 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[23-Jun-2024 08:05:55 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id has already been taken"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[23-Jun-2024 08:05:56 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[23-Jun-2024 08:05:56 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id has already been taken"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[12-Jul-2024 04:49:59 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Jul-2024 04:50:04 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Jul-2024 04:51:16 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Jul-2024 04:51:41 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Jul-2024 04:51:49 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 62
+[12-Jul-2024 04:51:49 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 63
+[12-Jul-2024 04:51:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 72
+[12-Jul-2024 04:51:50 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Jul-2024 04:51:51 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id sudah digunakan"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[12-Jul-2024 04:51:52 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Jul-2024 04:51:52 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id has already been taken"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[12-Jul-2024 04:51:55 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Jul-2024 04:51:56 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[12-Jul-2024 04:51:56 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id sudah digunakan"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[12-Jul-2024 04:51:56 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["transaction_details.order_id sudah digunakan"]} in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php:167
+Stack trace:
+#0 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-Q...', Array, 'POST')
+#1 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(109): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-Q...', Array)
+#2 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/Snap.php(36): Midtrans\Snap::createTransaction(Array)
+#3 /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php(156): Midtrans\Snap::getSnapToken(Array)
+#4 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/vendor/midtrans/midtrans-php/Midtrans/ApiRequestor.php on line 167
+[24-Jul-2024 13:21:17 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[24-Jul-2024 13:23:25 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[24-Jul-2024 13:23:25 Asia/Jakarta] PHP Notice:  Undefined index: alamatWali in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/proses.php on line 121
+[24-Jul-2024 13:24:26 Asia/Jakarta] PHP Notice:  Undefined index: tipePayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 62
+[24-Jul-2024 13:24:26 Asia/Jakarta] PHP Notice:  Undefined index: noPayment in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 63
+[24-Jul-2024 13:24:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function buatRp() in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/sdmp6832/public_html/e-spp.sdm3bdg.sch.id/siswa/payment/pending.php on line 72

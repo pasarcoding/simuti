@@ -1,0 +1,266 @@
+<?php
+
+include 'config/rupiah.php';
+
+$hari = date('d');
+$bulan = date('m');
+$query_hari = mysqli_query($conn,"SELECT SUM(debit) as jumlah_debit, SUM(kredit) as jumlah_kredit FROM transaksi WHERE DATE_FORMAT((tanggal),'%m') like '%$bulan%'");
+$saldo_h = mysqli_fetch_array($query_hari);
+$saldo_hari = $saldo_h['jumlah_debit'] - $saldo_h['jumlah_kredit'];
+
+$ta = mysqli_fetch_array(mysqli_query($conn,"SELECT * FROM tahun_ajaran where aktif='Y'"));
+$idTahun = $ta['idTahunAjaran'];
+$tahun = $ta['nmTahunAjaran'];
+
+$idt = mysqli_fetch_array(mysqli_query($conn,"SELECT * FROM identitas where npsn='10700295'"));
+
+
+$dtsiswa = mysqli_fetch_array(mysqli_query($conn,"SELECT * FROM view_detil_siswa where nisnSiswa='$_SESSION[ids]'"));
+
+
+$apa = mysqli_query($conn,"SELECT * FROM siswa where nisnSiswa='$_SESSION[ids]' ");
+$ra = mysqli_fetch_array($apa);
+
+$edit = mysqli_query($conn,"SELECT * FROM identitas ");
+$record = mysqli_fetch_array($edit);
+?>
+
+<div class="col-xs-12">
+  <?php if ($_SESSION['level'] == 'ketuakelas') { ?>
+    <div class="alert alert-warning alert-dismissible text-center" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <p>Anda login sebagai <?php echo $ra['level']; ?>, silahkan kelola kas kelas anda dengan baik :) </p>
+    </div>
+  <?php } ?>
+
+
+  <div class="box box-primary box-solid">
+    <div class="box-header with-border">
+      <h3 class="box-title">
+        <?php date_default_timezone_set('Asia/Jakarta');
+        //Menampilkan tanggal hari ini dalam bahasa Indonesia dan English
+        $namaHari = array("Ahad", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu");
+        $namaBulan = array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+        $today = date('l, F j, Y');
+        $sekarang = $namaHari[date('N')] . ", " . date('j') . " " . $namaBulan[(date('n') - 1)] . " " . date('Y'); ?>
+
+        <?php echo $sekarang; ?> | <?php
+                                    date_default_timezone_set('Asia/Jakarta'); //Menyesuaikan waktu dengan tempat kita tinggal
+                                    echo $timestamp = date('H:i:s'); //Menampilkan Jam Sekarang
+                                    ?> |
+        <SCRIPT language=JavaScript>
+          var d = new Date();
+          var h = d.getHours();
+          if (h < 11) {
+            document.write('Selamat pagi, ');
+          } else {
+            if (h < 15) {
+              document.write('Selamat siang, ');
+            } else {
+              if (h < 19) {
+                document.write('Selamat sore, ');
+              } else {
+                if (h <= 23) {
+                  document.write('Selamat malam,');
+                }
+              }
+            }
+          }
+        </SCRIPT><?php echo $ra['nmSiswa'] ?><div class="col" role="main">
+      </h3>
+
+    </div><!-- /.box-header -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="fa fa-bank"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text dash-text">Nama Sekolah</span>
+              <span class="info-box-number"><?php echo $record['nmSekolah']; ?> </span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-red"><i class="fa fa-user"></i></span>
+
+
+            <div class="info-box-content">
+              <span class="info-box-text dash-text">Nis/nisn</span>
+              <span class="info-box-number"><?php echo $ra['nisSiswa']; ?>/<?php echo $ra['nisnSiswa']; ?> </span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+       
+        <!-- /.col -->
+        <?php
+        $query_pegawai = mysqli_query($conn,"SELECT *  FROM users");
+        $num_pegawai = mysqli_num_rows($query_pegawai);
+        $query_nasabah = mysqli_query($conn,"SELECT *  FROM siswa");
+        $num_nasabah = mysqli_num_rows($query_nasabah);
+
+
+        ?>
+   <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="fa fa-users"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text dash-text">Nama Siswa</span>
+              <span class="info-box-number"><?php echo $ra['nmSiswa'] ?></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+       
+
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-blue"><i class="fa fa-usd"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text dash-text">Saldo Tabungan Anda</span>
+              <span class="info-box-number">Rp. <?php echo rupiah($ra['saldo']); ?></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+       
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="fa fa-credit-card"></i></span>
+
+            <div class="info-box-content">
+              <?php
+              $no = 1;
+              $totDibayar = 0;
+              $ta = mysqli_fetch_array(mysqli_query($conn,"SELECT * FROM tahun_ajaran "));
+              $idTahun = $ta['idTahunAjaran'];
+              $tahun = $ta['nmTahunAjaran'];
+              $totTagihan = 0;
+              $sqlJenisBayar = mysqli_query($conn,"SELECT jenis_bayar.*, pos_bayar.nmPosBayar 
+				FROM jenis_bayar INNER JOIN pos_bayar ON jenis_bayar.idPosBayar = pos_bayar.idPosBayar
+ 				");
+              while ($djb = mysqli_fetch_array($sqlJenisBayar)) {
+                if ($djb['tipeBayar'] == 'bulanan') {
+                  //menghitung semua tagihan bulanan
+                  $tgbul   =  mysqli_fetch_array(mysqli_query($conn,"SELECT
+						jenis_bayar.idPosBayar,
+						pos_bayar.nmPosBayar,
+						tagihan_bulanan.idSiswa,
+						Sum(tagihan_bulanan.jumlahBayar) AS TotalSemuaTagihanBulanan
+						FROM
+						tagihan_bulanan
+						INNER JOIN jenis_bayar ON tagihan_bulanan.idJenisBayar = jenis_bayar.idJenisBayar
+						INNER JOIN pos_bayar ON jenis_bayar.idPosBayar = pos_bayar.idPosBayar
+						WHERE tagihan_bulanan.idJenisBayar='$djb[idJenisBayar]' AND tagihan_bulanan.idSiswa='$dtsiswa[idSiswa]'
+						GROUP BY
+						jenis_bayar.idPosBayar"));
+                  $semuaTagihan = $tgbul['TotalSemuaTagihanBulanan'];
+
+                  $dbayar = mysqli_fetch_array(mysqli_query($conn,"SELECT
+						jenis_bayar.idPosBayar,
+						pos_bayar.nmPosBayar,
+						jenis_bayar.idTahunAjaran,
+						tahun_ajaran.nmTahunAjaran,
+						jenis_bayar.nmJenisBayar,
+						Sum(tagihan_bulanan.jumlahBayar) AS TotalPembayaranPerJenis,
+						tagihan_bulanan.statusBayar
+						FROM
+						tagihan_bulanan
+						INNER JOIN jenis_bayar ON tagihan_bulanan.idJenisBayar = jenis_bayar.idJenisBayar
+						INNER JOIN pos_bayar ON jenis_bayar.idPosBayar = pos_bayar.idPosBayar
+						INNER JOIN tahun_ajaran ON jenis_bayar.idTahunAjaran = tahun_ajaran.idTahunAjaran
+						WHERE tagihan_bulanan.idJenisBayar='$djb[idJenisBayar]' AND tagihan_bulanan.statusBayar='1' AND tagihan_bulanan.idSiswa='$dtsiswa[idSiswa]'
+						GROUP BY
+						tagihan_bulanan.idJenisBayar"));
+                  $jBayar   = $dbayar['TotalPembayaranPerJenis'];
+                  $tagihan   = $semuaTagihan - $jBayar;
+                } else {
+                  //menghitung semua tagihan bebas
+                  $tgb   =   mysqli_fetch_array(mysqli_query($conn,"SELECT
+							tagihan_bebas.idTagihanBebas,
+							jenis_bayar.idPosBayar,
+							pos_bayar.nmPosBayar,
+							tagihan_bebas.idSiswa,
+							SUM(tagihan_bebas.totalTagihan) As TotalSemuaTagihanBebas
+							FROM
+							tagihan_bebas
+							INNER JOIN jenis_bayar ON tagihan_bebas.idJenisBayar = jenis_bayar.idJenisBayar
+							INNER JOIN pos_bayar ON jenis_bayar.idPosBayar = pos_bayar.idPosBayar
+							WHERE tagihan_bebas.idJenisBayar='$djb[idJenisBayar]' AND tagihan_bebas.idSiswa='$dtsiswa[idSiswa]'
+							GROUP BY
+							jenis_bayar.idPosBayar"));
+                  $semuaTagihan = $tgb['TotalSemuaTagihanBebas'];
+
+                  $dbayar = mysqli_fetch_array(mysqli_query($conn,"SELECT
+						tagihan_bebas.idJenisBayar,
+						jenis_bayar.nmJenisBayar,
+						jenis_bayar.idTahunAjaran,
+						tahun_ajaran.nmTahunAjaran,
+						tagihan_bebas_bayar.idTagihanBebas,
+						Sum(tagihan_bebas_bayar.jumlahBayar) AS TotalPembayaranPerJenis,
+						tagihan_bebas_bayar.ketBayar
+						FROM
+						tagihan_bebas_bayar
+						INNER JOIN tagihan_bebas ON tagihan_bebas_bayar.idTagihanBebas = tagihan_bebas.idTagihanBebas
+						INNER JOIN jenis_bayar ON tagihan_bebas.idJenisBayar = jenis_bayar.idJenisBayar
+						INNER JOIN tahun_ajaran ON jenis_bayar.idTahunAjaran = tahun_ajaran.idTahunAjaran
+						WHERE tagihan_bebas_bayar.idTagihanBebas='$tgb[idTagihanBebas]'
+						GROUP BY
+						tagihan_bebas_bayar.idTagihanBebas"));
+                  $jBayar   = $dbayar['TotalPembayaranPerJenis'];
+                  $tagihan   = $semuaTagihan - $jBayar;
+                }
+                echo "";
+                $no++;
+                $totDibayar += $jBayar;
+                $totTagihan += $tagihan;
+              }
+              ?>
+              <span class="info-box-text dash-text">Total Tagihan </span>
+              <span class="info-box-number"><?php echo buatRp($totTagihan); ?></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-blue"><i class="fa fa-users"></i></span>
+            <?php
+            $bulan = date('m');
+            $tampil = mysqli_query($conn,"SELECT * FROM siswa ");
+            while ($r = mysqli_fetch_array($tampil)) {
+              $hadir = mysqli_num_rows(mysqli_query($conn,"SELECT * FROM rb_absensi_siswa where  DATE_FORMAT((tanggal),'%m') like '%$bulan%' AND nisn='$_SESSION[ids]' AND kode_kehadiran='H'"));
+            }
+            ?>
+            <div class="info-box-content">
+              <span class="info-box-text dash-text"> absen bulan ini </span>
+              <span class="info-box-number"> <?php echo $hadir; ?> Hari Sudah Absen</span>
+
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+        </div> 
+
+
+
+        <!-- /.col -->
+      </div>
+
+
+      <!-- /.info-box -->
+  </div>
+  <!-- /.col -->
+ 

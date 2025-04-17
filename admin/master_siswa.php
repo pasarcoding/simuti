@@ -150,8 +150,8 @@ if ($_GET[act] == '') {
 <?php
 } elseif ($_GET[act] == 'edit') {
 	if (isset($_POST[update])) {
-	    
-        $query = mysqli_query($conn, "UPDATE siswa SET
+
+		$query = mysqli_query($conn, "UPDATE siswa SET
                 nisSiswa = '$_POST[nisSiswa]',
                 nisnSiswa = '$_POST[nisnSiswa]',
                 nmSiswa = '$_POST[nmSiswa]',
@@ -187,8 +187,8 @@ if ($_GET[act] == '') {
                 kab_kota = '$_POST[kab_kota]',
                 provinsi = '$_POST[provinsi]'
             WHERE idSiswa = '$_POST[id]'");
-            
-	
+
+
 		if ($query) {
 			echo "<script>document.location='index.php?view=siswa&act=edit&id=$_POST[id]&sukses';</script>";
 		} else {
@@ -206,7 +206,7 @@ if ($_GET[act] == '') {
 				<h3 class="box-title"> Edit Data Siswa</h3>
 			</div><!-- /.box-header -->
 			<div class="box-body">
-			    	<?php
+				<?php
 				if (isset($_GET['sukses'])) {
 					echo "<div class='alert alert-success alert-dismissible fade in' role='alert'> 
 					<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -220,151 +220,153 @@ if ($_GET[act] == '') {
 				}
 				?>
 				<form method="post" action="" class="form-horizontal">
-				    					<input type="hidden" name="id" value="<?php echo $record['idSiswa']; ?>">
+					<input type="hidden" name="id" value="<?php echo $record['idSiswa']; ?>">
 
-				    <center><b><h3>Data Diri Siswa</h3></b></center>
-                    <hr>
-				  <div class="row">
-				    <div class="col-sm-6">
-				         <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">NIK Siswa</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="nik_siswa" class="form-control" value="<?php echo $record['nik_siswa']; ?>"  placeholder="">
-                            </div>
-                        </div>
-                          <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Nomor KK</label>
-                            <div class="col-sm-8">
-							<input type="text" name="no_kk" class="form-control" value="<?php echo $record['no_kk']; ?>" placeholder="" required>
-                            </div>
-                        </div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">NIS</label>
-    						<div class="col-sm-8">
-							<input type="text" name="nisSiswa" class="form-control" value="<?php echo $record['nisSiswa']; ?>" placeholder="" required>
-    						</div>
-    					</div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">NISN</label>
-    						<div class="col-sm-8">
-							<input type="text" name="nisnSiswa" class="form-control" value="<?php echo $record['nisnSiswa']; ?>" placeholder="" required>
-    						</div>
-    					</div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">Nama Siswa</label>
-    						<div class="col-sm-8">
-							<input type="text" name="nmSiswa" class="form-control" value="<?php echo $record['nmSiswa']; ?>" placeholder="" required>
-    						</div>
-    					</div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">Jenis Kelamin</label>
-    						<div class="col-sm-8">
-    						<select class="form-control" name="jkSiswa">
-								<option value="<?php echo $record['jkSiswa']; ?>"><?php echo $record['jkSiswa']; ?></option>
-								<option value="L">L</option>
-								<option value="P">P</option>
-							</select>
-    						</div>
-    					</div>
-    					 <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Tempat Lahir</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="tempat_lahir" class="form-control" value="<?php echo $record['tempat_lahir']; ?>" placeholder="">
-                            </div>
-                        </div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">Tanggal Lahir </label>
-    						<div class="col-sm-8">
-    							<input type="text" name="tglLahir" class="form-control pull-right date-picker" value="<?php echo $record['tglLahirSiswa']; ?>" value="">
-    						</div>
-    					</div>
-    					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Agama</label>
-						<div class="col-sm-8">
-							<select class="form-control" name="agamaSiswa">
-							    <option value="<?php echo $record['agama']; ?>"><?php echo $record['agama']; ?></option>
-								<option value="Islam">Islam</option>
-								<option value="Katolik">Katolik</option>
-								<option value="Protestan">Protestan</option>
-								<option value="Hindu">Hindu</option>
-								<option value="Budha">Budha</option>
-							</select>
-						</div>
-					</div>
-    				
-                     </div>
-                    
-                   
-                    <div class="col-sm-6">
-                       
-					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">No.Hp Siswa</label>
-						<div class="col-sm-8">
-							<input type="number" name="noHpsis" class="form-control" value="<?php echo $record['noHpSis']; ?>" placeholder="">
-						</div>
-					</div>
-                        	<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Kelas</label>
-						<div class="col-sm-8">
-							<select name="idKelas" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM kelas_siswa ORDER BY idKelas ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-									$selected = ($k['idKelas'] == $record['idKelas']) ? ' selected="selected"' : "";
+					<center><b>
+							<h3>Data Diri Siswa</h3>
+						</b></center>
+					<hr>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">NIK Siswa</label>
+								<div class="col-sm-8">
+									<input type="text" name="nik_siswa" class="form-control" value="<?php echo $record['nik_siswa']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Nomor KK</label>
+								<div class="col-sm-8">
+									<input type="text" name="no_kk" class="form-control" value="<?php echo $record['no_kk']; ?>" placeholder="" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">NIS</label>
+								<div class="col-sm-8">
+									<input type="text" name="nisSiswa" class="form-control" value="<?php echo $record['nisSiswa']; ?>" placeholder="" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">NISN</label>
+								<div class="col-sm-8">
+									<input type="text" name="nisnSiswa" class="form-control" value="<?php echo $record['nisnSiswa']; ?>" placeholder="" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Nama Siswa</label>
+								<div class="col-sm-8">
+									<input type="text" name="nmSiswa" class="form-control" value="<?php echo $record['nmSiswa']; ?>" placeholder="" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Jenis Kelamin</label>
+								<div class="col-sm-8">
+									<select class="form-control" name="jkSiswa">
+										<option value="<?php echo $record['jkSiswa']; ?>"><?php echo $record['jkSiswa']; ?></option>
+										<option value="L">L</option>
+										<option value="P">P</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Tempat Lahir</label>
+								<div class="col-sm-8">
+									<input type="text" name="tempat_lahir" class="form-control" value="<?php echo $record['tempat_lahir']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Tanggal Lahir </label>
+								<div class="col-sm-8">
+									<input type="text" name="tglLahir" class="form-control pull-right date-picker" value="<?php echo $record['tglLahirSiswa']; ?>" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Agama</label>
+								<div class="col-sm-8">
+									<select class="form-control" name="agamaSiswa">
+										<option value="<?php echo $record['agama']; ?>"><?php echo $record['agama']; ?></option>
+										<option value="Islam">Islam</option>
+										<option value="Katolik">Katolik</option>
+										<option value="Protestan">Protestan</option>
+										<option value="Hindu">Hindu</option>
+										<option value="Budha">Budha</option>
+									</select>
+								</div>
+							</div>
 
-									echo '<option value="' . $k['idKelas'] . '" ' . $selected . '>' . $k['nmKelas'] . '</option>';
-								}
-								?>
-							</select>
 						</div>
-					</div>
-					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">Level</label>
-    						<div class="col-sm-8">
-    							<select class="form-control" name="level">
-    							    <option value="<?php echo $record['level']; ?>"><?php echo $record['level']; ?></option>
-    								<option value="siswa">Siswa</option>
-    								<option value="ketuakelas">Ketua Kelas</option>
-    
-    							</select>
-    						</div>
-    					</div>
-    					<div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Asal Sekolah</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="asal_sekolah" class="form-control" value="<?php echo $record['asal_sekolah']; ?>" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Jumlah Saudara</label>
-                            <div class="col-sm-8">
-                                <input type="number" name="jml_saudara" class="form-control" value="<?php echo $record['jml_saudara']; ?>" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Urutan Anak</label>
-                            <div class="col-sm-8">
-                                <input type="number" name="urutan_anak" class="form-control" value="<?php echo $record['urutan_anak']; ?>" placeholder="">
-                            </div>
-                        </div>
-                      
-                        	<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Username</label>
-						<div class="col-sm-8">
-							<input type="text" name="username" class="form-control" value="<?php echo $record['username']; ?>" placeholder="">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Password</label>
-						<div class="col-sm-8">
-							<input type="text" name="password" class="form-control"  value="<?php echo $record['password']; ?>" placeholder="">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Status Siswa</label>
-						<div class="col-sm-8">
-								<select class="form-control" name="statusSiswa">
-										<option value="<?= $record['statusSiswa']?>"> <?= $record['statusSiswa']?> </option>
+
+
+						<div class="col-sm-6">
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">No.Hp Siswa</label>
+								<div class="col-sm-8">
+									<input type="number" name="noHpsis" class="form-control" value="<?php echo $record['noHpSis']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Kelas</label>
+								<div class="col-sm-8">
+									<select name="idKelas" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM kelas_siswa ORDER BY idKelas ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											$selected = ($k['idKelas'] == $record['idKelas']) ? ' selected="selected"' : "";
+
+											echo '<option value="' . $k['idKelas'] . '" ' . $selected . '>' . $k['nmKelas'] . '</option>';
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Level</label>
+								<div class="col-sm-8">
+									<select class="form-control" name="level">
+										<option value="<?php echo $record['level']; ?>"><?php echo $record['level']; ?></option>
+										<option value="siswa">Siswa</option>
+										<option value="ketuakelas">Ketua Kelas</option>
+
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Asal Sekolah</label>
+								<div class="col-sm-8">
+									<input type="text" name="asal_sekolah" class="form-control" value="<?php echo $record['asal_sekolah']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Jumlah Saudara</label>
+								<div class="col-sm-8">
+									<input type="number" name="jml_saudara" class="form-control" value="<?php echo $record['jml_saudara']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Urutan Anak</label>
+								<div class="col-sm-8">
+									<input type="number" name="urutan_anak" class="form-control" value="<?php echo $record['urutan_anak']; ?>" placeholder="">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Username</label>
+								<div class="col-sm-8">
+									<input type="text" name="username" class="form-control" value="<?php echo $record['username']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Password</label>
+								<div class="col-sm-8">
+									<input type="text" name="password" class="form-control" value="<?php echo $record['password']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Status Siswa</label>
+								<div class="col-sm-8">
+									<select class="form-control" name="statusSiswa">
+										<option value="<?= $record['statusSiswa'] ?>"> <?= $record['statusSiswa'] ?> </option>
 										<option value="Aktif">Aktif</option>
 										<option value="Non Aktif">Non Aktif</option>
 										<option value="Drop Out">Drop Out</option>
@@ -373,181 +375,185 @@ if ($_GET[act] == '') {
 										<option value="Calon Siswa">Calon Siswa</option>
 
 									</select>
+								</div>
+							</div>
+
+
 						</div>
 					</div>
-				
-					
-                     </div>
-                    </div>
-                    <hr>
-                    <center><h3>Data Orang Tua</h3></center>
-                    <hr>
-                    <div class="row">
-				    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">NIK Ayah</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="nik_ayah" class="form-control" value="<?php echo $record['nik_ayah']; ?>"  placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Nama Ayah</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="nama_ayah" class="form-control" value="<?php echo $record['nama_ayah']; ?>"  placeholder="">
-                            </div>
-                        </div>
-                        	<div class="form-group">
-						<label for="" class="col-sm-3 control-label">No.Hp Ortu</label>
-						<div class="col-sm-8">
-							<input type="number" name="noHp" class="form-control" value="<?php echo $record['noHpOrtu']; ?>"  placeholder="">
+					<hr>
+					<center>
+						<h3>Data Orang Tua</h3>
+					</center>
+					<hr>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">NIK Ayah</label>
+								<div class="col-sm-8">
+									<input type="text" name="nik_ayah" class="form-control" value="<?php echo $record['nik_ayah']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Nama Ayah</label>
+								<div class="col-sm-8">
+									<input type="text" name="nama_ayah" class="form-control" value="<?php echo $record['nama_ayah']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">No.Hp Ortu</label>
+								<div class="col-sm-8">
+									<input type="number" name="noHp" class="form-control" value="<?php echo $record['noHpOrtu']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Pendidikan Terakhir Ayah</label>
+								<div class="col-sm-8">
+									<select name="pendidikan_terakhir_ayah" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_pendidikan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											$selected = ($k['id'] == $record['pendidikan_terakhir_ayah']) ? ' selected="selected"' : "";
+											echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['tingkat_pendidikan'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Pekerjaan Ayah</label>
+								<div class="col-sm-8">
+									<select name="pekerjaan_ayah" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_pekerjaan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											$selected = ($k['id'] == $record['pekerjaan_ayah']) ? ' selected="selected"' : "";
+											echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['pekerjaan'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Penghasilan Ayah</label>
+								<div class="col-sm-8">
+									<select name="penghasilan_ayah" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_penghasilan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											$selected = ($k['id'] == $record['penghasilan_ayah']) ? ' selected="selected"' : "";
+
+											echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['kategori'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+
+							<hr>
+							<center>
+								<h3>Data Alamat</h3>
+							</center>
+							<hr>
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Alamat</label>
+								<div class="col-sm-8">
+									<input type="text" name="alamat" class="form-control" value="<?php echo $record['alamatOrtu']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">RT/RW</label>
+								<div class="col-sm-8">
+									<input type="text" name="rt_rw" class="form-control" value="<?php echo $record['rt_rw']; ?>" placeholder="">
+								</div>
+							</div>
+
+						</div>
+						<div class="col-sm-6">
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Nama Ibu</label>
+								<div class="col-sm-8">
+									<input type="text" name="nama_ibu" class="form-control" value="<?php echo $record['nama_ibu']; ?>" placeholder="">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Pendidikan Terakhir Ibu</label>
+								<div class="col-sm-8">
+									<select name="pendidikan_terakhir_ibu" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_pendidikan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											$selected = ($k['id'] == $record['pendidikan_terakhir_ibu']) ? ' selected="selected"' : "";
+											echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['tingkat_pendidikan'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Pekerjaan Ibu</label>
+								<div class="col-sm-8">
+									<select name="pekerjaan_ibu" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_pekerjaan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											$selected = ($k['id'] == $record['pekerjaan_ibu']) ? ' selected="selected"' : "";
+											echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['pekerjaan'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Penghasilan Ibu</label>
+								<div class="col-sm-8">
+									<select name="penghasilan_ibu" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_penghasilan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+
+											$selected = ($k['id'] == $record['penghasilan_ibu']) ? ' selected="selected"' : "";
+
+											echo '<option value="' . $k['id'] . '" ' . $selected . '>' . $k['kategori'] . '</option>';
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Kelurahan</label>
+								<div class="col-sm-8">
+									<input type="text" name="kelurahan" class="form-control" value="<?php echo $record['kelurahan']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Kecamatan</label>
+								<div class="col-sm-8">
+									<input type="text" name="kecamatan" class="form-control" value="<?php echo $record['kecamatan']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Kab/Kota</label>
+								<div class="col-sm-8">
+									<input type="text" name="kab_kota" class="form-control" value="<?php echo $record['kab_kota']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Provinsi</label>
+								<div class="col-sm-8">
+									<input type="text" name="provinsi" class="form-control" value="<?php echo $record['provinsi']; ?>" placeholder="">
+								</div>
+							</div>
+
 						</div>
 					</div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Pendidikan Terakhir Ayah</label>
-                            <div class="col-sm-8">
-                                <select name="pendidikan_terakhir_ayah" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_pendidikan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-								    $selected = ($k['id'] == $record['pendidikan_terakhir_ayah']) ? ' selected="selected"' : "";
-									echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['tingkat_pendidikan'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Pekerjaan Ayah</label>
-                            <div class="col-sm-8">
-                                <select name="pekerjaan_ayah" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_pekerjaan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-								    $selected = ($k['id'] == $record['pekerjaan_ayah']) ? ' selected="selected"' : "";
-									echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['pekerjaan'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                         <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Penghasilan Ayah</label>
-                            <div class="col-sm-8">
-                                  <select name="penghasilan_ayah" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_penghasilan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-								      $selected = ($k['id'] == $record['penghasilan_ayah']) ? ' selected="selected"' : "";
 
-									echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['kategori'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                        
-                          <hr>
-                    <center><h3>Data Alamat</h3></center>
-                    <hr>
-                    
-					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Alamat</label>
-						<div class="col-sm-8">
-							<input type="text" name="alamat" class="form-control"  value="<?php echo $record['alamatOrtu']; ?>"  placeholder="">
-						</div>
-					</div>
-				 <div class="form-group">
-                        <label for="" class="col-sm-3 control-label">RT/RW</label>
-                        <div class="col-sm-8">
-                            <input type="text" name="rt_rw" class="form-control"   value="<?php echo $record['rt_rw']; ?>"  placeholder="">
-                        </div>
-                    </div>
-                   
-                    </div>
-                     <div class="col-sm-6">
-                       
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Nama Ibu</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="nama_ibu" class="form-control"  value="<?php echo $record['nama_ibu']; ?>"  placeholder="">
-                            </div>
-                        </div>
-                         
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Pendidikan Terakhir Ibu</label>
-                            <div class="col-sm-8">
-                                <select name="pendidikan_terakhir_ibu" class="form-control">
-							<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_pendidikan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-								    $selected = ($k['id'] == $record['pendidikan_terakhir_ibu']) ? ' selected="selected"' : "";
-									echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['tingkat_pendidikan'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Pekerjaan Ibu</label>
-                            <div class="col-sm-8">
-                                 <select name="pekerjaan_ibu" class="form-control">
-							<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_pekerjaan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-								    $selected = ($k['id'] == $record['pekerjaan_ibu']) ? ' selected="selected"' : "";
-									echo "<option value=" . $k['id'] . " ' . $selected . '>" . $k['pekerjaan'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Penghasilan Ibu</label>
-                            <div class="col-sm-8">
-                                <select name="penghasilan_ibu" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_penghasilan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-								    
-								      $selected = ($k['id'] == $record['penghasilan_ibu']) ? ' selected="selected"' : "";
 
-									echo '<option value="' . $k['id'] . '" ' . $selected . '>' . $k['kategori'] . '</option>';
-								}
-								?>
-							</select>
-                            </div>
-                        </div>  
-                         <div class="form-group">
-                        <label for="" class="col-sm-3 control-label">Kelurahan</label>
-                        <div class="col-sm-8">
-                            <input type="text" name="kelurahan" class="form-control"  value="<?php echo $record['kelurahan']; ?>"  placeholder="">
-                        </div>
-                    </div>
-                         <div class="form-group">
-                        <label for="" class="col-sm-3 control-label">Kecamatan</label>
-                        <div class="col-sm-8">
-                            <input type="text" name="kecamatan" class="form-control"  value="<?php echo $record['kecamatan']; ?>"  placeholder="">
-                        </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Kab/Kota</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="kab_kota" class="form-control"  value="<?php echo $record['kab_kota']; ?>"  placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Provinsi</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="provinsi" class="form-control"  value="<?php echo $record['provinsi']; ?>"  placeholder="">
-                            </div>
-                        </div>
 
-                          </div>
-                            </div>
-                   
-                   
-					
-				
+
 					<div class="form-group">
 						<label for="" class="col-sm-3 control-label"></label>
 						<div class="col-sm-8">
@@ -563,7 +569,7 @@ if ($_GET[act] == '') {
 <?php
 } elseif ($_GET[act] == 'tambah') {
 	if (isset($_POST[tambah])) {
-            $query = mysqli_query($conn, "INSERT INTO siswa(
+		$query = mysqli_query($conn, "INSERT INTO siswa(
                 nisSiswa, 
                 nisnSiswa, 
                 nmSiswa, 
@@ -656,144 +662,146 @@ if ($_GET[act] == '') {
 			</div><!-- /.box-header -->
 			<div class="box-body">
 				<form method="POST" action="" class="form-horizontal">
-                    <center><b><h3>Data Diri Siswa</h3></b></center>
-                    <hr>
-				  <div class="row">
-				    <div class="col-sm-6">
-				         <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">NIK Siswa</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="nik_siswa" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                          <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Nomor KK</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="no_kk" class="form-control" placeholder="">
-                            </div>
-                        </div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">NIS</label>
-    						<div class="col-sm-8">
-    							<input type="text" name="nisSiswa" class="form-control" id="" placeholder="" required>
-    						</div>
-    					</div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">NISN</label>
-    						<div class="col-sm-8">
-    							<input type="text" name="nisnSiswa" class="form-control" id="" placeholder="Kolom ini otomatis akan menjadi  nomor  rekening di menu tabungan">
-    						</div>
-    					</div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">Nama Siswa</label>
-    						<div class="col-sm-8">
-    							<input type="text" name="nmSiswa" class="form-control" id="" placeholder="" required>
-    						</div>
-    					</div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">Jenis Kelamin</label>
-    						<div class="col-sm-8">
-    							<select class="form-control" name="jkSiswa">
-    								<option value="L">L</option>
-    								<option value="P">P</option>
-    							</select>
-    						</div>
-    					</div>
-    					 <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Tempat Lahir</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="tempat_lahir" class="form-control" placeholder="">
-                            </div>
-                        </div>
-    					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">Tanggal Lahir </label>
-    						<div class="col-sm-8">
-    							<input type="text" name="tglLahir" class="form-control pull-right date-picker" value="">
-    						</div>
-    					</div>
-    					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Agama</label>
-						<div class="col-sm-8">
-							<select class="form-control" name="agamaSiswa">
-								<option value="Islam">Islam</option>
-								<option value="Katolik">Katolik</option>
-								<option value="Protestan">Protestan</option>
-								<option value="Hindu">Hindu</option>
-								<option value="Budha">Budha</option>
-							</select>
+					<center><b>
+							<h3>Data Diri Siswa</h3>
+						</b></center>
+					<hr>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">NIK Siswa</label>
+								<div class="col-sm-8">
+									<input type="text" name="nik_siswa" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Nomor KK</label>
+								<div class="col-sm-8">
+									<input type="text" name="no_kk" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">NIS</label>
+								<div class="col-sm-8">
+									<input type="text" name="nisSiswa" class="form-control" id="" placeholder="" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">NISN</label>
+								<div class="col-sm-8">
+									<input type="text" name="nisnSiswa" class="form-control" id="" placeholder="Kolom ini otomatis akan menjadi  nomor  rekening di menu tabungan">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Nama Siswa</label>
+								<div class="col-sm-8">
+									<input type="text" name="nmSiswa" class="form-control" id="" placeholder="" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Jenis Kelamin</label>
+								<div class="col-sm-8">
+									<select class="form-control" name="jkSiswa">
+										<option value="L">L</option>
+										<option value="P">P</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Tempat Lahir</label>
+								<div class="col-sm-8">
+									<input type="text" name="tempat_lahir" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Tanggal Lahir </label>
+								<div class="col-sm-8">
+									<input type="text" name="tglLahir" class="form-control pull-right date-picker" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Agama</label>
+								<div class="col-sm-8">
+									<select class="form-control" name="agamaSiswa">
+										<option value="Islam">Islam</option>
+										<option value="Katolik">Katolik</option>
+										<option value="Protestan">Protestan</option>
+										<option value="Hindu">Hindu</option>
+										<option value="Budha">Budha</option>
+									</select>
+								</div>
+							</div>
+
 						</div>
-					</div>
-    				
-                     </div>
-                    
-                   
-                    <div class="col-sm-6">
-                       
-					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">No.Hp Siswa</label>
-						<div class="col-sm-8">
-							<input type="number" name="noHpsis" class="form-control" value="<?php echo $record['noHpSis']; ?>" placeholder="">
-						</div>
-					</div>
-                        	<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Kelas</label>
-						<div class="col-sm-8">
-							<select name="idKelas" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM kelas_siswa ORDER BY idKelas ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-									echo "<option value=" . $k['idKelas'] . ">" . $k['nmKelas'] . "</option>";
-								}
-								?>
-							</select>
-						</div>
-					</div>
-					<div class="form-group">
-    						<label for="" class="col-sm-3 control-label">Level</label>
-    						<div class="col-sm-8">
-    							<select class="form-control" name="level">
-    								<option value="siswa">Siswa</option>
-    								<option value="ketuakelas">Ketua Kelas</option>
-    
-    							</select>
-    						</div>
-    					</div>
-    					<div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Asal Sekolah</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="asal_sekolah" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Jumlah Saudara</label>
-                            <div class="col-sm-8">
-                                <input type="number" name="jml_saudara" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Urutan Anak</label>
-                            <div class="col-sm-8">
-                                <input type="number" name="urutan_anak" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                      
-                        	<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Username</label>
-						<div class="col-sm-8">
-							<input type="text" name="username" class="form-control" placeholder="">
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Password</label>
-						<div class="col-sm-8">
-							<input type="text" name="password" class="form-control" placeholder="">
-						</div>
-					</div>
-						<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Status Siswa</label>
-						<div class="col-sm-8">
-								<select class="form-control" name="statusSiswa">
-										<option value="<?= $record['statusSiswa']?>"> <?= $record['statusSiswa']?> </option>
+
+
+						<div class="col-sm-6">
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">No.Hp Siswa</label>
+								<div class="col-sm-8">
+									<input type="number" name="noHpsis" class="form-control" value="<?php echo $record['noHpSis']; ?>" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Kelas</label>
+								<div class="col-sm-8">
+									<select name="idKelas" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM kelas_siswa ORDER BY idKelas ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											echo "<option value=" . $k['idKelas'] . ">" . $k['nmKelas'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Level</label>
+								<div class="col-sm-8">
+									<select class="form-control" name="level">
+										<option value="siswa">Siswa</option>
+										<option value="ketuakelas">Ketua Kelas</option>
+
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Asal Sekolah</label>
+								<div class="col-sm-8">
+									<input type="text" name="asal_sekolah" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Jumlah Saudara</label>
+								<div class="col-sm-8">
+									<input type="number" name="jml_saudara" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Urutan Anak</label>
+								<div class="col-sm-8">
+									<input type="number" name="urutan_anak" class="form-control" placeholder="">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Username</label>
+								<div class="col-sm-8">
+									<input type="text" name="username" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Password</label>
+								<div class="col-sm-8">
+									<input type="text" name="password" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Status Siswa</label>
+								<div class="col-sm-8">
+									<select class="form-control" name="statusSiswa">
+										<option value="<?= $record['statusSiswa'] ?>"> <?= $record['statusSiswa'] ?> </option>
 										<option value="Aktif">Aktif</option>
 										<option value="Non Aktif">Non Aktif</option>
 										<option value="Drop Out">Drop Out</option>
@@ -802,169 +810,171 @@ if ($_GET[act] == '') {
 										<option value="Calon Siswa">Calon Siswa</option>
 
 									</select>
-						</div>
-					</div>
-				
-                     </div>
-                    </div>
-                    <hr>
-                    <center><h3>Data Orang Tua</h3></center>
-                    <hr>
-                    <div class="row">
-				    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">NIK Ayah</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="nik_ayah" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Nama Ayah</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="nama_ayah" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        	<div class="form-group">
-						<label for="" class="col-sm-3 control-label">No.Hp Ortu</label>
-						<div class="col-sm-8">
-							<input type="number" name="noHp" class="form-control" placeholder="">
-						</div>
-					</div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Pendidikan Terakhir Ayah</label>
-                            <div class="col-sm-8">
-                                <select name="pendidikan_terakhir_ayah" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_pendidikan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-									echo "<option value=" . $k['id'] . ">" . $k['tingkat_pendidikan'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Pekerjaan Ayah</label>
-                            <div class="col-sm-8">
-                                <select name="pekerjaan_ayah" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_pekerjaan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-									echo "<option value=" . $k['id'] . ">" . $k['pekerjaan'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                         <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Penghasilan Ayah</label>
-                            <div class="col-sm-8">
-                                  <select name="penghasilan_ayah" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_penghasilan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-									echo "<option value=" . $k['id'] . ">" . $k['kategori'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                
-                        
-					<div class="form-group">
-						<label for="" class="col-sm-3 control-label">Alamat</label>
-						<div class="col-sm-8">
-							<input type="text" name="alamat" class="form-control" placeholder="">
-						</div>
-					</div>
-				 <div class="form-group">
-                        <label for="" class="col-sm-3 control-label">RT/RW</label>
-                        <div class="col-sm-8">
-                            <input type="text" name="rt_rw" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                   
-                    </div>
-                     <div class="col-sm-6">
-                       
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Nama Ibu</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="nama_ibu" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                         
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Pendidikan Terakhir Ibu</label>
-                            <div class="col-sm-8">
-                                <select name="pendidikan_terakhir_ibu" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_pendidikan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-									echo "<option value=" . $k['id'] . ">" . $k['tingkat_pendidikan'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Pekerjaan Ibu</label>
-                            <div class="col-sm-8">
-                                 <select name="pekerjaan_ibu" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_pekerjaan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-									echo "<option value=" . $k['id'] . ">" . $k['pekerjaan'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Penghasilan Ibu</label>
-                            <div class="col-sm-8">
-                                <select name="penghasilan_ibu" class="form-control">
-								<?php
-								$sqk = mysqli_query($conn, "SELECT * FROM rb_penghasilan ORDER BY id ASC");
-								while ($k = mysqli_fetch_array($sqk)) {
-									echo "<option value=" . $k['id'] . ">" . $k['kategori'] . "</option>";
-								}
-								?>
-							</select>
-                            </div>
-                        </div>  
-                         <div class="form-group">
-                        <label for="" class="col-sm-3 control-label">Kelurahan</label>
-                        <div class="col-sm-8">
-                            <input type="text" name="kelurahan" class="form-control" placeholder="">
-                        </div>
-                    </div>
-                         <div class="form-group">
-                        <label for="" class="col-sm-3 control-label">Kecamatan</label>
-                        <div class="col-sm-8">
-                            <input type="text" name="kecamatan" class="form-control" placeholder="">
-                        </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Kab/Kota</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="kab_kota" class="form-control" placeholder="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">Provinsi</label>
-                            <div class="col-sm-8">
-                                <input type="text" name="provinsi" class="form-control" placeholder="">
-                            </div>
-                        </div>
+								</div>
+							</div>
 
-                          </div>
-                            </div>
-                   
-                   
-					
-				
-				
+						</div>
+					</div>
+					<hr>
+					<center>
+						<h3>Data Orang Tua</h3>
+					</center>
+					<hr>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">NIK Ayah</label>
+								<div class="col-sm-8">
+									<input type="text" name="nik_ayah" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Nama Ayah</label>
+								<div class="col-sm-8">
+									<input type="text" name="nama_ayah" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">No.Hp Ortu</label>
+								<div class="col-sm-8">
+									<input type="number" name="noHp" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Pendidikan Terakhir Ayah</label>
+								<div class="col-sm-8">
+									<select name="pendidikan_terakhir_ayah" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_pendidikan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											echo "<option value=" . $k['id'] . ">" . $k['tingkat_pendidikan'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Pekerjaan Ayah</label>
+								<div class="col-sm-8">
+									<select name="pekerjaan_ayah" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_pekerjaan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											echo "<option value=" . $k['id'] . ">" . $k['pekerjaan'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Penghasilan Ayah</label>
+								<div class="col-sm-8">
+									<select name="penghasilan_ayah" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_penghasilan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											echo "<option value=" . $k['id'] . ">" . $k['kategori'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Alamat</label>
+								<div class="col-sm-8">
+									<input type="text" name="alamat" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">RT/RW</label>
+								<div class="col-sm-8">
+									<input type="text" name="rt_rw" class="form-control" placeholder="">
+								</div>
+							</div>
+
+						</div>
+						<div class="col-sm-6">
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Nama Ibu</label>
+								<div class="col-sm-8">
+									<input type="text" name="nama_ibu" class="form-control" placeholder="">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Pendidikan Terakhir Ibu</label>
+								<div class="col-sm-8">
+									<select name="pendidikan_terakhir_ibu" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_pendidikan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											echo "<option value=" . $k['id'] . ">" . $k['tingkat_pendidikan'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Pekerjaan Ibu</label>
+								<div class="col-sm-8">
+									<select name="pekerjaan_ibu" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_pekerjaan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											echo "<option value=" . $k['id'] . ">" . $k['pekerjaan'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Penghasilan Ibu</label>
+								<div class="col-sm-8">
+									<select name="penghasilan_ibu" class="form-control">
+										<?php
+										$sqk = mysqli_query($conn, "SELECT * FROM rb_penghasilan ORDER BY id ASC");
+										while ($k = mysqli_fetch_array($sqk)) {
+											echo "<option value=" . $k['id'] . ">" . $k['kategori'] . "</option>";
+										}
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Kelurahan</label>
+								<div class="col-sm-8">
+									<input type="text" name="kelurahan" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Kecamatan</label>
+								<div class="col-sm-8">
+									<input type="text" name="kecamatan" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Kab/Kota</label>
+								<div class="col-sm-8">
+									<input type="text" name="kab_kota" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label">Provinsi</label>
+								<div class="col-sm-8">
+									<input type="text" name="provinsi" class="form-control" placeholder="">
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
 
 					<div class="form-group">
 						<label for="" class="col-sm-3 control-label"></label>
@@ -986,7 +996,7 @@ if ($_GET[act] == '') {
 				<h3 class="box-title"> Import Data Siswa</h3>
 			</div><!-- /.box-header -->
 			<div class="box-body">
-			<?php
+				<?php
 				if (isset($_GET['sukses'])) {
 					echo "<div class='alert alert-success alert-dismissible fade in' role='alert'> 
                           <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
@@ -1025,7 +1035,7 @@ if ($_GET[act] == '') {
 					unlink($target);
 				}
 				?>
-				
+
 				<form method="POST" action="" class="form-horizontal" onSubmit="return validateForm()" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="" class="col-sm-8 control-label">Download Format Data Siswa</label>

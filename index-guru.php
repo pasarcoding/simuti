@@ -66,7 +66,7 @@ if (isset($_SESSION[idg])) {
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/049c89ac09.js" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.css">
 
     <style type="text/css">
       .files {
@@ -228,196 +228,195 @@ if (isset($_SESSION[idg])) {
             echo "</div>";
           } elseif ($_GET['view'] == 'sktahunan') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_sk_tahunan.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'program_kerja') {
+            echo "<div class='row'>";
+            include "guru/master_sk_tahunan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'program_kerja') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_program_kerja.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'rencana_kegiatan') {
+            echo "<div class='row'>";
+            include "guru/master_program_kerja.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rencana_kegiatan') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_rencana_kegiatan.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'realisasi_kegiatan') {
+            echo "<div class='row'>";
+            include "guru/master_rencana_kegiatan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'realisasi_kegiatan') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_realisasi_kegiatan.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'monev_kegiatan') {
+            echo "<div class='row'>";
+            include "guru/master_realisasi_kegiatan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'monev_kegiatan') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_monev_kegiatan.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'approval_kegiatan') {
+            echo "<div class='row'>";
+            include "guru/master_monev_kegiatan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'approval_kegiatan') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_approval_kegiatan.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'prestasi') {
+            echo "<div class='row'>";
+            include "guru/master_approval_kegiatan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'prestasi') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_prestasi.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'lapprestasi') {
-                    echo "<div class='row'>";
-                    include "guru/master_lapprestasi.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'bk') {
-            
-                    echo "<div class='row'>";
-                    include "guru/master_pelanggaran.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'lapbk') {
-            
-                    echo "<div class='row'>";
-                    include "guru/master_laporanpelanggaran.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'siswa') {
+            echo "<div class='row'>";
+            include "guru/master_prestasi.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapprestasi') {
+            echo "<div class='row'>";
+            include "guru/master_lapprestasi.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'bk') {
 
-                echo "<div class='row'>";
-                include "guru/master_siswa.php";
-                echo "</div>";
-            } elseif ($_GET['view'] == 'siswa_afirmasi') {
-            
-                    echo "<div class='row'>";
-                    include "guru/master_siswa_afirmasi.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'lapsiswa') {
+            echo "<div class='row'>";
+            include "guru/master_pelanggaran.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapbk') {
+
+            echo "<div class='row'>";
+            include "guru/master_laporanpelanggaran.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'siswa') {
+
+            echo "<div class='row'>";
+            include "guru/master_siswa.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'siswa_afirmasi') {
+
+            echo "<div class='row'>";
+            include "guru/master_siswa_afirmasi.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapsiswa') {
 
             echo "<div class='row'>";
             include "admin/laporan_siswa.php";
-            echo "</div>";  
-            } elseif ($_GET['view'] == 'lapsiswaafirmasi') {
-            
-                    echo "<div class='row'>";
-                    include "admin/laporan_siswa_afirmasi.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'tahfidz') {
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapsiswaafirmasi') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_tahfidz.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'prestasi_ptk') {
+            echo "<div class='row'>";
+            include "admin/laporan_siswa_afirmasi.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'tahfidz') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_prestasi_ptk.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'lapprestasi_ptk') {
-                    echo "<div class='row'>";
-                    include "guru/master_lapprestasi_ptk.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'bk_ptk') {
-            
-                    echo "<div class='row'>";
-                    include "guru/master_pelanggaran_ptk.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'lapbk_ptk') {
-            
-                    echo "<div class='row'>";
-                    include "guru/master_laporanpelanggaran_ptk.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'jam') {
+            echo "<div class='row'>";
+            include "guru/master_tahfidz.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'prestasi_ptk') {
 
-                    echo "<div class='row'>";
-                    include "guru/master_jam.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'jadwalpelajaran') {
+            echo "<div class='row'>";
+            include "guru/master_prestasi_ptk.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapprestasi_ptk') {
+            echo "<div class='row'>";
+            include "guru/master_lapprestasi_ptk.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'bk_ptk') {
 
-                echo "<div class='row'>";
-                include "guru/master_jadwalpelajaran.php";
-                echo "</div>";
-            } elseif ($_GET['view'] == 'matapelajaran') {
-        
-                echo "<div class='row'>";
-                include "guru/master_matapelajaran.php";
-                echo "</div>";
-            }elseif ($_GET['view'] == 'absensi_guru') {
+            echo "<div class='row'>";
+            include "guru/master_pelanggaran_ptk.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapbk_ptk') {
 
-                    echo "<div class='row'>";
-                    include "admin/absensi_guru.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'absensi_guru_rekap') {
-            
-                    echo "<div class='row'>";
-                    include "admin/absensi_guru_rekap.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'inventaris') {
-            
-                    echo "<div class='row'>";
-                    include "guru/master_inventaris.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'inventarismasuks') {
-            
-                    echo "<div class='row'>";
-                    include "guru/master_inventaris_masuk.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'inventariskeluar') {
-            
-                    echo "<div class='row'>";
-                    include "guru/master_inventaris_keluar.php";
-                    echo "</div>";
-            }   elseif ($_GET['view'] == 'buku_tamu') {
+            echo "<div class='row'>";
+            include "guru/master_laporanpelanggaran_ptk.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'jam') {
 
-                echo "<div class='row'>";
-                include "guru/master_buku_tamu.php";
-                echo "</div>";
-            }elseif ($_GET['view'] == 'jadwalpelajaran_kurikulum') {
+            echo "<div class='row'>";
+            include "guru/master_jam.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'jadwalpelajaran') {
 
-                echo "<div class='row'>";
-                include "guru/master_jadwalpelajaran_kurikulum.php";
-                echo "</div>";
-                
+            echo "<div class='row'>";
+            include "guru/master_jadwalpelajaran.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'matapelajaran') {
+
+            echo "<div class='row'>";
+            include "guru/master_matapelajaran.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'absensi_guru') {
+
+            echo "<div class='row'>";
+            include "admin/absensi_guru.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'absensi_guru_rekap') {
+
+            echo "<div class='row'>";
+            include "admin/absensi_guru_rekap.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inventaris') {
+
+            echo "<div class='row'>";
+            include "guru/master_inventaris.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inventarismasuks') {
+
+            echo "<div class='row'>";
+            include "guru/master_inventaris_masuk.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inventariskeluar') {
+
+            echo "<div class='row'>";
+            include "guru/master_inventaris_keluar.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'buku_tamu') {
+
+            echo "<div class='row'>";
+            include "guru/master_buku_tamu.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'jadwalpelajaran_kurikulum') {
+
+            echo "<div class='row'>";
+            include "guru/master_jadwalpelajaran_kurikulum.php";
+            echo "</div>";
+
             //Kepsek
-            }elseif ($_GET['view'] == 'absensi_guru_kepsek') {
+          } elseif ($_GET['view'] == 'absensi_guru_kepsek') {
 
-                    echo "<div class='row'>";
-                    include "guru/kepsek/absensi_guru.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'inventaris_kepsek') {
-            
-                    echo "<div class='row'>";
-                    include "guru/kepsek/master_inventaris.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'inventarismasuks_kepsek') {
-            
-                    echo "<div class='row'>";
-                    include "guru/kepsek/master_inventaris_masuk.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'inventariskeluar_kepsek') {
-            
-                    echo "<div class='row'>";
-                    include "guru/kepsek/master_inventaris_keluar.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'surat_masuk') {
+            echo "<div class='row'>";
+            include "guru/kepsek/absensi_guru.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inventaris_kepsek') {
 
-                    echo "<div class='row'>";
-                    include "guru/kepsek/surat_masuk.php";
-                    echo "</div>";
-            } elseif ($_GET['view'] == 'surat_keluar') {
-            
-                    echo "<div class='row'>";
-                    include "guru/kepsek/surat_keluar.php";
-                    echo "</div>";
-            }elseif ($_GET['view'] == 'guru') {
+            echo "<div class='row'>";
+            include "guru/kepsek/master_inventaris.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inventarismasuks_kepsek') {
 
-        echo "<div class='row'>";
+            echo "<div class='row'>";
+            include "guru/kepsek/master_inventaris_masuk.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inventariskeluar_kepsek') {
+
+            echo "<div class='row'>";
+            include "guru/kepsek/master_inventaris_keluar.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'surat_masuk') {
+
+            echo "<div class='row'>";
+            include "guru/kepsek/surat_masuk.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'surat_keluar') {
+
+            echo "<div class='row'>";
+            include "guru/kepsek/surat_keluar.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'guru') {
+
+            echo "<div class='row'>";
             include "guru/kepsek/master_guru.php";
             echo "</div>";
-                }elseif ($_GET['view'] == 'sktahunan_all') {
-    
+          } elseif ($_GET['view'] == 'sktahunan_all') {
+
             echo "<div class='row'>";
             include "guru/kepsek/master_sk_tahunan.php";
             echo "</div>";
-        
-            }elseif ($_GET['view'] == 'jam_all') {
+          } elseif ($_GET['view'] == 'jam_all') {
 
-                    echo "<div class='row'>";
-                    include "guru/kepsek/master_jam.php";
-                    echo "</div>";
-            }elseif ($_GET[view] == 'matapelajaran_all') {
+            echo "<div class='row'>";
+            include "guru/kepsek/master_jam.php";
+            echo "</div>";
+          } elseif ($_GET[view] == 'matapelajaran_all') {
 
             echo "<div class='row'>";
             include "guru/kepsek/master_matapelajaran.php";
@@ -437,314 +436,316 @@ if (isset($_SESSION[idg])) {
             echo "<div class='row'>";
             include "guru/kepsek/bayar_dapen.php";
             echo "</div>";
-          }elseif ($_GET['view'] == 'hutang') {
+          } elseif ($_GET['view'] == 'hutang') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/hutangtoko.php";
-        echo "</div>";
-            } elseif ($_GET['view'] == 'detailtoko') {
-            
-                    echo "<div class='row'>";
-                    include "guru/kepsek/detailtoko.php";
-                    echo "</div>";
-                 }   elseif ($_GET['view'] == 'nasabah') {
+            echo "<div class='row'>";
+            include "guru/kepsek/hutangtoko.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'detailtoko') {
+
+            echo "<div class='row'>";
+            include "guru/kepsek/detailtoko.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'nasabah') {
 
             echo "<div class='row'>";
             include "guru/kepsek/com_nasabah/nasabah.php";
             echo "</div>";
-           
-        } elseif ($_GET['view'] == 'laptransaksi') {
-        
-                echo "<div class='row'>";
-                include "guru/kepsek/com_laporan/laporan-transaksi.php";
-                echo "</div>";
-        }elseif ($_GET['view'] == 'program_kerja') {
+          } elseif ($_GET['view'] == 'laptransaksi') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/program_kerja/master_program_kerja.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'program_kerja_ismubaris') {
+            echo "<div class='row'>";
+            include "guru/kepsek/com_laporan/laporan-transaksi.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'program_kerja') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/program_kerja/master_program_kerja_ismubaris.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'program_kerja_kesiswaan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/program_kerja/master_program_kerja.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'program_kerja_ismubaris') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/program_kerja/master_program_kerja_kesiswaan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'program_kerja_kurikulum') {
+            echo "<div class='row'>";
+            include "guru/kepsek/program_kerja/master_program_kerja_ismubaris.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'program_kerja_kesiswaan') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/program_kerja/master_program_kerja_kurikulum.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'program_kerja_sarpras') {
+            echo "<div class='row'>";
+            include "guru/kepsek/program_kerja/master_program_kerja_kesiswaan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'program_kerja_kurikulum') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/program_kerja/master_program_kerja_sarpras.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'program_kerja_humas') {
+            echo "<div class='row'>";
+            include "guru/kepsek/program_kerja/master_program_kerja_kurikulum.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'program_kerja_sarpras') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/program_kerja/master_program_kerja_humas.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'program_kerja_tu') {
+            echo "<div class='row'>";
+            include "guru/kepsek/program_kerja/master_program_kerja_sarpras.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'program_kerja_humas') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/program_kerja/master_program_kerja_tu.php";
-        echo "</div>";
-}
+            echo "<div class='row'>";
+            include "guru/kepsek/program_kerja/master_program_kerja_humas.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'program_kerja_tu') {
 
+            echo "<div class='row'>";
+            include "guru/kepsek/program_kerja/master_program_kerja_tu.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rencana_kegiatan') {
 
+            echo "<div class='row'>";
+            include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rencana_kegiatan_ismubaris') {
 
-elseif ($_GET['view'] == 'rencana_kegiatan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_ismubaris.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rencana_kegiatan_kesiswaan') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rencana_kegiatan_ismubaris') {
+            echo "<div class='row'>";
+            include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_kesiswaan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rencana_kegiatan_kurikulum') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_ismubaris.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rencana_kegiatan_kesiswaan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_kurikulum.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rencana_kegiatan_sarpras') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_kesiswaan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rencana_kegiatan_kurikulum') {
+            echo "<div class='row'>";
+            include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_sarpras.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rencana_kegiatan_humas') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_kurikulum.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rencana_kegiatan_sarpras') {
+            echo "<div class='row'>";
+            include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_humas.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rencana_kegiatan_tu') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_sarpras.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rencana_kegiatan_humas') {
+            echo "<div class='row'>";
+            include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_tu.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'realisasi_kegiatan') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_humas.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rencana_kegiatan_tu') {
+            echo "<div class='row'>";
+            include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'realisasi_kegiatan_ismubaris') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/rencana_kegiatan/master_rencana_kegiatan_tu.php";
-        echo "</div>";
-}
+            echo "<div class='row'>";
+            include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_ismubaris.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'realisasi_kegiatan_kesiswaan') {
 
+            echo "<div class='row'>";
+            include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_kesiswaan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'realisasi_kegiatan_kurikulum') {
 
-elseif ($_GET['view'] == 'realisasi_kegiatan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_kurikulum.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'realisasi_kegiatan_sarpras') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'realisasi_kegiatan_ismubaris') {
+            echo "<div class='row'>";
+            include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_sarpras.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'realisasi_kegiatan_humas') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_ismubaris.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'realisasi_kegiatan_kesiswaan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_humas.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'realisasi_kegiatan_tu') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_kesiswaan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'realisasi_kegiatan_kurikulum') {
+            echo "<div class='row'>";
+            include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_tu.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'monev_kegiatan') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_kurikulum.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'realisasi_kegiatan_sarpras') {
+            echo "<div class='row'>";
+            include "guru/kepsek/monev_kegiatan/master_monev_kegiatan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'monev_kegiatan_ismubaris') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_sarpras.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'realisasi_kegiatan_humas') {
+            echo "<div class='row'>";
+            include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_ismubaris.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'monev_kegiatan_kesiswaan') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_humas.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'realisasi_kegiatan_tu') {
+            echo "<div class='row'>";
+            include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_kesiswaan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'monev_kegiatan_kurikulum') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/realisasi_kegiatan/master_realisasi_kegiatan_tu.php";
-        echo "</div>";
-}
+            echo "<div class='row'>";
+            include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_kurikulum.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'monev_kegiatan_sarpras') {
 
+            echo "<div class='row'>";
+            include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_sarpras.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'monev_kegiatan_humas') {
 
-elseif ($_GET['view'] == 'monev_kegiatan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_humas.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'monev_kegiatan_tu') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/monev_kegiatan/master_monev_kegiatan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'monev_kegiatan_ismubaris') {
+            echo "<div class='row'>";
+            include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_tu.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapsiswa') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_ismubaris.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'monev_kegiatan_kesiswaan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_siswa.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapsiswaafirmasi') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_kesiswaan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'monev_kegiatan_kurikulum') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_siswa_afirmasi.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lappembayaran') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_kurikulum.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'monev_kegiatan_sarpras') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_pembayaran_perkelas.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lappiutang') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_sarpras.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'monev_kegiatan_humas') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_piutang_perjenisbayar.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapbku') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_humas.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'monev_kegiatan_tu') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_bku.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lapbank') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/monev_kegiatan/master_monev_kegiatan_tu.php";
-        echo "</div>";
-        
-                
-}elseif ($_GET['view'] == 'lapsiswa') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_bank.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'laptunai') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_siswa.php";
-        echo "</div>";
-}elseif ($_GET['view'] == 'lapsiswaafirmasi') {
+            echo "<div class='row'>";
+            include "admin/laporan_tunai.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lappembayaranhari') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_siswa_afirmasi.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'lappembayaran') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_kondisi_keuangan_perhari.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lappembayaranperbulan') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_pembayaran_perkelas.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'lappiutang') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_pembayaran_perbulan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'lappembayaranperposbayar') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_piutang_perjenisbayar.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'lapbku') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_pembayaran_perposbayar.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'laptagihansiswa') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_bku.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'lapbank') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_tagihan_siswa.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rekapitulasi') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_bank.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'laptunai') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_rekapitulasi.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rekappengeluaran') {
 
-        echo "<div class='row'>";
-        include "admin/laporan_tunai.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'lappembayaranhari') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_rekappengeluaran.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'rekapkondisikeuangan') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_kondisi_keuangan_perhari.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'lappembayaranperbulan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/laporan_kondisi_keuangan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_lok_barang') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_pembayaran_perbulan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'lappembayaranperposbayar') {
+            echo "<div class='row'>";
+            include "guru/inv_lok_barang.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_sumber_dana') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_pembayaran_perposbayar.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'laptagihansiswa') {
+            echo "<div class='row'>";
+            include "guru/inv_sumber_dana.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_jenis_barang') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_tagihan_siswa.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rekapitulasi') {
+            echo "<div class='row'>";
+            include "guru/inv_jenis_barang.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_data_barang') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_rekapitulasi.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rekappengeluaran') {
+            echo "<div class='row'>";
+            include "guru/inv_data_barang.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_data_item') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_rekappengeluaran.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'rekapkondisikeuangan') {
+            echo "<div class='row'>";
+            include "guru/inv_data_item.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_pengadaan') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/laporan_kondisi_keuangan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_lok_barang') {
+            echo "<div class='row'>";
+            include "guru/inv_pengadaan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_penghapusan') {
 
-        echo "<div class='row'>";
-        include "guru/inv_lok_barang.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_sumber_dana') {
+            echo "<div class='row'>";
+            include "guru/inv_penghapusan.php";
+            echo "</div>";
+            //kepsek
+          } elseif ($_GET['view'] == 'inv_data_barang_kepsek') {
 
-        echo "<div class='row'>";
-        include "guru/inv_sumber_dana.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_jenis_barang') {
+            echo "<div class='row'>";
+            include "guru/kepsek/inv_data_barang.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_data_item_kepsek') {
 
-        echo "<div class='row'>";
-        include "guru/inv_jenis_barang.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_data_barang') {
+            echo "<div class='row'>";
+            include "guru/kepsek/inv_data_item.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_pengadaan_kepsek') {
 
-        echo "<div class='row'>";
-        include "guru/inv_data_barang.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_data_item') {
+            echo "<div class='row'>";
+            include "guru/kepsek/inv_pengadaan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'inv_penghapusan_kepsek') {
 
-        echo "<div class='row'>";
-        include "guru/inv_data_item.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_pengadaan') {
+            echo "<div class='row'>";
+            include "guru/kepsek/inv_penghapusan.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'arsip_kategori') {
 
-        echo "<div class='row'>";
-        include "guru/inv_pengadaan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_penghapusan') {
+            echo "<div class='row'>";
+            include "guru/arsip_kategori.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'arsip_data') {
 
-        echo "<div class='row'>";
-        include "guru/inv_penghapusan.php";
-        echo "</div>";
-    //kepsek
-}elseif ($_GET['view'] == 'inv_data_barang_kepsek') {
+            echo "<div class='row'>";
+            include "guru/arsip_data.php";
+            echo "</div>";
+          } elseif ($_GET['view'] == 'arsip_kepsek') {
 
-        echo "<div class='row'>";
-        include "guru/kepsek/inv_data_barang.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_data_item_kepsek') {
+            echo "<div class='row'>";
+            include "guru/kepsek/arsip_data.php";
+            echo "</div>";
+          }
 
-        echo "<div class='row'>";
-        include "guru/kepsek/inv_data_item.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_pengadaan_kepsek') {
-
-        echo "<div class='row'>";
-        include "guru/kepsek/inv_pengadaan.php";
-        echo "</div>";
-} elseif ($_GET['view'] == 'inv_penghapusan_kepsek') {
-
-        echo "<div class='row'>";
-        include "guru/kepsek/inv_penghapusan.php";
-        echo "</div>";
-}
-            
           ?>
         </section>
       </div><!-- /.content-wrapper -->
       <footer class="main-footer">
         <?php include "footer.php"; ?>
       </footer>
-    <!--  <nav id="menu-bottom" class="nav">
+      <!--  <nav id="menu-bottom" class="nav">
         <a href="index-guru.php?view=home" class="nav__link">
           <i class="fas fa-home"></i>
           <span class="nav__text">Home</span>
@@ -768,7 +769,7 @@ elseif ($_GET['view'] == 'monev_kegiatan') {
 
       </nav>
     </div><!-- ./wrapper -->
-  
+
 
     <!-- panggil ckeditor.js -->
     <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
@@ -818,11 +819,11 @@ elseif ($_GET['view'] == 'monev_kegiatan') {
 
     <script src="assets/js/script.js"></script>
     <script src="assets/app.js"></script>
-        <script src='plugins/fullcalendar/fullcalendar.min.js'></script>
+    <script src='plugins/fullcalendar/fullcalendar.min.js'></script>
 
     <script src="assets/bootstrap-select/js/bootstrap-select.min.js"></script>
     <script>
-         $(function() {
+      $(function() {
         // calendar
         $(function() {
           $("#datepicker").datepicker();
@@ -1342,12 +1343,12 @@ elseif ($_GET['view'] == 'monev_kegiatan') {
 
     <?php if (isset($_GET['view']) && $_GET['view'] == 'absengurus') { ?>
       <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
-<script>
-    $(document).ready(function() {
-        var localstream = null;
-        var vd;
+      <script>
+        $(document).ready(function() {
+          var localstream = null;
+          var vd;
 
-        function initCam() {
+          function initCam() {
             const video = document.createElement('video');
             video.id = 'video-cam';
             video.autoplay = 'true';
@@ -1356,24 +1357,24 @@ elseif ($_GET['view'] == 'monev_kegiatan') {
             navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
 
             if (navigator.getUserMedia) {
-                navigator.getUserMedia({
-                    video: true
-                }, function(stream) {
-                    video.srcObject = stream;
-                    localstream = stream;
-                }, function(error) {
-                    alert('CAM ERROR : ' + error);
-                })
+              navigator.getUserMedia({
+                video: true
+              }, function(stream) {
+                video.srcObject = stream;
+                localstream = stream;
+              }, function(error) {
+                alert('CAM ERROR : ' + error);
+              })
             }
 
             const parent = document.getElementById('vid-cam');
             parent.append(video);
             vd = video;
-        }
+          }
 
-        initCam();
+          initCam();
 
-        document.getElementById('take').addEventListener('click', function(e) {
+          document.getElementById('take').addEventListener('click', function(e) {
             e.preventDefault();
             var width = vd.offsetWidth;
             var height = vd.offsetHeight;
@@ -1395,21 +1396,21 @@ elseif ($_GET['view'] == 'monev_kegiatan') {
             document.getElementById('file-cam').files = base64ImageToBlob(img.src);
 
             if (localstream != null) {
-                localstream.getTracks()[0].stop()
-                this.style.display = 'none'
-                document.getElementById('reCam').style.display = 'block'
+              localstream.getTracks()[0].stop()
+              this.style.display = 'none'
+              document.getElementById('reCam').style.display = 'block'
             }
-        })
+          })
 
-        document.getElementById('reCam').addEventListener('click', function(e) {
+          document.getElementById('reCam').addEventListener('click', function(e) {
             e.preventDefault();
             document.getElementById('vid-cam').innerHTML = '';
             initCam();
             this.style.display = 'none'
             document.getElementById('take').style.display = 'block'
-        })
+          })
 
-        function base64ImageToBlob(str) {
+          function base64ImageToBlob(str) {
             var pos = str.indexOf(';base64,');
             var type = str.substring(5, pos);
             var b64 = str.substr(pos + 8);
@@ -1420,66 +1421,66 @@ elseif ($_GET['view'] == 'monev_kegiatan') {
             var view = new Uint8Array(buffer);
 
             for (var n = 0; n < imageContent.length; n++) {
-                view[n] = imageContent.charCodeAt(n);
+              view[n] = imageContent.charCodeAt(n);
             }
 
             var blob = new Blob([buffer], {
-                type: type
+              type: type
             });
 
             let fileName = new Date().getTime() + '.' + type.split('/')[1]
             let file = new File([blob], fileName, {
-                type: "image/jpeg",
-                lastModified: new Date().getTime()
+              type: "image/jpeg",
+              lastModified: new Date().getTime()
             }, 'utf-8');
             let container = new DataTransfer();
             container.items.add(file);
 
             return container.files;
-        }
+          }
 
-        // MAPS
-        var mapOptions = {
+          // MAPS
+          var mapOptions = {
             zoom: 13
-        }
-        var layer = new L.TileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicml2YW5pIiwiYSI6ImNscTYzeWZyYzBneGYya252NWczemNkNjEifQ.m2iojpd1aoNA9sfsFDKQLw', {
+          }
+          var layer = new L.TileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicml2YW5pIiwiYSI6ImNscTYzeWZyYzBneGYya252NWczemNkNjEifQ.m2iojpd1aoNA9sfsFDKQLw', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+              '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+              'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             id: 'mapbox/satellite-v9'
-        });
-        var map = new L.map('map', mapOptions);
-        map.addLayer(layer);
+          });
+          var map = new L.map('map', mapOptions);
+          map.addLayer(layer);
 
-        let start = false;
-        var interval;
+          let start = false;
+          var interval;
 
-        let mymarker = null;
+          let mymarker = null;
 
-        function updateMap() {
+          function updateMap() {
             if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    if (mymarker != null) {
-                        mymarker.setLatLng([position.coords.latitude, position.coords.longitude]);
-                        map.setView([position.coords.latitude, position.coords.longitude], 18, {
-                            animation: true
-                        });
-                    } else {
-                        mymarker = new L.Marker([position.coords.latitude, position.coords.longitude]);
-                        mymarker.addTo(map);
-                        map.setView([position.coords.latitude, position.coords.longitude], 18, {
-                            animation: true
-                        });
-                    }
+              navigator.geolocation.getCurrentPosition(function(position) {
+                if (mymarker != null) {
+                  mymarker.setLatLng([position.coords.latitude, position.coords.longitude]);
+                  map.setView([position.coords.latitude, position.coords.longitude], 18, {
+                    animation: true
+                  });
+                } else {
+                  mymarker = new L.Marker([position.coords.latitude, position.coords.longitude]);
+                  mymarker.addTo(map);
+                  map.setView([position.coords.latitude, position.coords.longitude], 18, {
+                    animation: true
+                  });
+                }
 
-                    document.getElementById('latlng').value = `${position.coords.latitude}, ${position.coords.longitude}`;
-                })
+                document.getElementById('latlng').value = `${position.coords.latitude}, ${position.coords.longitude}`;
+              })
             }
-        }
+          }
 
-        updateMap(); // Panggil fungsi sekali saat halaman dimuat
-    });
-</script>
+          updateMap(); // Panggil fungsi sekali saat halaman dimuat
+        });
+      </script>
 
       </script>
     <?php } ?>
@@ -1521,7 +1522,7 @@ elseif ($_GET['view'] == 'monev_kegiatan') {
     <script>
       $('.textarea').wysihtml5();
 
-     
+
 
       //$('.datepicker').datepicker();
 

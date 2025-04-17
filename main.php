@@ -571,6 +571,8 @@ if ($_GET['view'] == 'home' or $_GET['view'] == '') {
         echo "<div class='row'>";
         include "admin/master_buku_tamu.php";
         echo "</div>";
+
+        //INVENTARIS
 } elseif ($_GET['view'] == 'inv_lok_barang') {
 
         echo "<div class='row'>";
@@ -605,5 +607,38 @@ if ($_GET['view'] == 'home' or $_GET['view'] == '') {
 
         echo "<div class='row'>";
         include "admin/inv_penghapusan.php";
+        echo "</div>";
+
+        // ARSIP
+} elseif ($_GET['view'] == 'arsip_kategori') {
+
+        echo "<div class='row'>";
+        include "admin/arsip_kategori.php";
+        echo "</div>";
+} elseif ($_GET['view'] == 'arsip_data') {
+
+        echo "<div class='row'>";
+        include "admin/arsip_data.php";
+        echo "</div>";
+        //ppdb
+} elseif ($_GET['view'] == 'ppdb_slider') {
+
+        echo "<div class='row'>";
+        include "admin/master_ppdb_slider.php";
+        echo "</div>";
+} elseif ($_GET['view'] == 'ppdb_jalur') {
+
+        echo "<div class='row'>";
+        include "admin/master_ppdb_jalur.php";
+        echo "</div>";
+} elseif ($_GET['view'] == 'ppdb_gelombang') {
+
+        echo "<div class='row'>";
+        include "admin/master_ppdb_gelombang.php";
+        echo "</div>";
+} elseif ($_GET['view'] == 'daftar_titipan') {
+
+        echo "<div class='row'>";
+        include "admin/master_ppdb_titipan.php";
         echo "</div>";
 }

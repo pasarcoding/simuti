@@ -25,12 +25,12 @@
 			<li><a href="index-guru.php?view=jadwalpelajaran"><i class="fa fa-calendar"></i> <span>Jadwal Pelajaran</span></a></li>
 			<li><a href="index-guru.php?view=gaji-saya"><i class="fa fa-money"></i> <span>Gaji Saya</span></a></li>
 			<li><a href="index-guru.php?view=bayar_dapen"><i class="fa fa-money"></i> <span>Dapen Saya</span></a></li>
-			<li><a href="index-guru.php?view=sktahunan"><i class="fa fa-book"></i> <span>SK  Saya</span></a></li>
+			<li><a href="index-guru.php?view=sktahunan"><i class="fa fa-book"></i> <span>SK Saya</span></a></li>
 			<li><a href="index-guru.php?view=tatib"><i class="fa fa-book"></i> <span>Tata Tertib PTK</span></a></li>
 			<li><a href="index-guru.php?view=jadwal_srg"><i class="fa fa-bookmark"></i> Jadwal Seragam PTK</a></li>
 			<?php if ($_SESSION['tugas'] == '0') { ?>
 
-			<li class="treeview <?php echo $kurikulum; ?>">
+				<li class="treeview <?php echo $kurikulum; ?>">
 					<a href="#">
 						<i class="fa fa-user-plus"></i> <span>Kepala Sekolah</span>
 						<i class="fa fa-angle-left pull-right"></i>
@@ -39,12 +39,12 @@
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=program_kerja"><i class="fa fa-circle-o"></i> Program Kerja </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=rencana_kegiatan"><i class="fa fa-circle-o"></i> Rencana Kegiatan </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=realisasi_kegiatan"><i class="fa fa-circle-o"></i> Realisasi Kegiatan </a></li>
-						 <li class="<?php echo $kurikulum5; ?>"><a href="?view=approval_kegiatan"><i class="fa fa-circle-o"></i> Approval Kegiatan </a></li>
+						<li class="<?php echo $kurikulum5; ?>"><a href="?view=approval_kegiatan"><i class="fa fa-circle-o"></i> Approval Kegiatan </a></li>
 
-                        <li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
+						<li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
 					</ul>
 				</li>
-					
+
 				<li class="treeview <?php echo $aktifakademik; ?>">
 					<a href="#">
 						<i class="fa fa-tags faa-shake animated"></i>
@@ -66,23 +66,23 @@
 					<ul class="treeview-menu">
 						<li class="<?php echo $aktifZ2; ?>"><a href="?view=lapprestasi"><i class="fa fa-bar-chart"></i> Rekap Prestasi Siswa</a></li>
 						<li class="<?php echo $aktifZ4; ?>"><a href="?view=lapbk"><i class="fa fa-bar-chart"></i> Rekap Pelanggaran Siswa</a></li>
-					<!--	<li class="<?php echo $aktifZ6; ?>"><a href="?view=lapkesehatan"><i class="fa fa-bar-chart"></i> Rekap Kesehatan Siswa</a></li> -->
+						<!--	<li class="<?php echo $aktifZ6; ?>"><a href="?view=lapkesehatan"><i class="fa fa-bar-chart"></i> Rekap Kesehatan Siswa</a></li> -->
 					</ul>
-					</li>
-									<li class="treeview <?php echo $aktifInventaris; ?>">
+				</li>
+				<li class="treeview <?php echo $aktifInventaris; ?>">
 
-				<a href="#">
-				<i class="fa fa-calendar"></i> <span>Absensi PTK</span>
+					<a href="#">
+						<i class="fa fa-calendar"></i> <span>Absensi PTK</span>
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						
-							<li class="<?php echo $aktifabsen1; ?>"><a href="?view=absensi_guru_kepsek"><i class="fa fa-calendar"></i> <span> Absensi PTK</span></a></li>
-				<li class="<?php echo $aktifabsen2; ?>"><a href="?view=absensi_guru_rekap"><i class="fa fa-calendar"></i> <span> Rekap Absen PTK</span></a></li>
+
+						<li class="<?php echo $aktifabsen1; ?>"><a href="?view=absensi_guru_kepsek"><i class="fa fa-calendar"></i> <span> Absensi PTK</span></a></li>
+						<li class="<?php echo $aktifabsen2; ?>"><a href="?view=absensi_guru_rekap"><i class="fa fa-calendar"></i> <span> Rekap Absen PTK</span></a></li>
 
 					</ul>
 				</li>
-					<li class="treeview <?php echo $aktifM; ?>">
+				<li class="treeview <?php echo $aktifM; ?>">
 					<a href="#">
 						<i class="fa fa-envelope faa-shake animated"></i>
 						<span>Data Surat </span>
@@ -93,8 +93,8 @@
 						<li class="<?php echo $aktifM2; ?>"><a href="?view=surat_keluar"><i class="fa fa-arrow-up"></i> Surat Keluar</a></li>
 					</ul>
 				</li>
-			
-			
+
+
 				<li class="treeview <?php echo $aktifInventaris; ?>">
 					<a href="#">
 						<i class="fa fa-money faa-shake animated"></i>
@@ -108,7 +108,7 @@
 
 					</ul>
 				</li>
-        	<li class="treeview <?php echo $aktifK; ?>">
+				<li class="treeview <?php echo $aktifK; ?>">
 					<a href="#">
 						<i class="fa fa-leanpub"></i>
 						<span>Tabungan Siswa</span>
@@ -120,7 +120,7 @@
 						<li class="<?php echo $aktifK5; ?>"><a href="?view=laptransaksi"><i class="fa fa-print "></i><span> Lap.Transaksi </span></a></li>
 					</ul>
 				</li>
-					<li class="treeview <?php echo $aktifismubaris; ?>">
+				<li class="treeview <?php echo $aktifismubaris; ?>">
 					<a href="#">
 						<i class="fa fa-tasks faa-shake animated"></i>
 						<span>Ismubaris</span>
@@ -134,7 +134,7 @@
 
 					</ul>
 				</li>
-					<li class="treeview <?php echo $aktifInventaris; ?>">
+				<li class="treeview <?php echo $aktifInventaris; ?>">
 					<a href="#">
 						<i class="fa fa-envelope faa-shake animated"></i>
 						<span>Sarana Prasarana </span>
@@ -144,7 +144,7 @@
 						<li class="<?php echo $aktifInventaris1; ?>"><a href="?view=inventaris_kepsek"><i class="fa fa-arrow-down"></i> Stok BHP </a></li>
 						<li class="<?php echo $aktifInventaris2; ?>"><a href="?view=inventarismasuks_kepsek"><i class="fa fa-arrow-up"></i> Barang Masuk</a></li>
 						<li class="<?php echo $aktifInventaris3; ?>"><a href="?view=inventariskeluar_kepsek"><i class="fa fa-arrow-up"></i> Barang Keluar</a></li>
-                        <li class="<?php echo $aktifInventaris4; ?>"><a href="?view=program_kerja_sarpras"><i class="fa fa-tasks"></i> Program Kerja</a></li>
+						<li class="<?php echo $aktifInventaris4; ?>"><a href="?view=program_kerja_sarpras"><i class="fa fa-tasks"></i> Program Kerja</a></li>
 						<li class="<?php echo $aktifInventaris5; ?>"><a href="?view=rencana_kegiatan_sarpras"><i class="fa fa-tasks"></i> Rencana Kegiatan</a></li>
 						<li class="<?php echo $aktifInventaris6; ?>"><a href="?view=realisasi_kegiatan_sarpras"><i class="fa fa-tasks"></i> Realisasi Kegiatan</a></li>
 						<li class="<?php echo $aktifInventaris7; ?>"><a href="?view=monev_kegiatan_sarpras"><i class="fa fa-tasks"></i> Monev Kegiatan</a></li>
@@ -167,7 +167,7 @@
 						<li class="<?php echo $aktifZ4; ?>"><a href="?view=lapbk"><i class="fa fa-bar-chart"></i> Rekap Pelanggaran Siswa</a></li>
 						<li class="<?php echo $aktifZ5; ?>"><a href="?view=tahfidz"><i class="fa fa-book"></i> Tahfidz</a></li>
 						<li class="<?php echo $aktifZ8; ?>"><a href="?view=program_kerja_kesiswaan"><i class="fa fa-tasks"></i> Program Kerja</a></li>
-						
+
 						<li class="<?php echo $aktifZ9; ?>"><a href="?view=rencana_kegiatan_kesiswaan"><i class="fa fa-tasks"></i> Rencana Kegiatan</a></li>
 						<li class="<?php echo $aktifZ10; ?>"><a href="?view=realisasi_kegiatan_kesiswaan"><i class="fa fa-tasks"></i> Realisasi Kegiatan</a></li>
 						<li class="<?php echo $aktifZ11; ?>"><a href="?view=monev_kegiatan_kesiswaan"><i class="fa fa-tasks"></i> Monev Kegiatan</a></li>
@@ -192,8 +192,8 @@
 
 					</ul>
 				</li>
-				
-					<li class="treeview <?php echo $aktifhumas; ?>">
+
+				<li class="treeview <?php echo $aktifhumas; ?>">
 					<a href="#">
 						<i class="fa fa-archive faa-shake animated"></i>
 						<span>Humas </span>
@@ -201,14 +201,14 @@
 					</a>
 					<ul class="treeview-menu">
 						<li class="<?php echo $aktifhumas1; ?>"><a href="?view=program_kerja_humas"><i class="fa fa-tasks"></i> Program Kerja</a></li>
-					    <li class="<?php echo $aktifhumas2; ?>"><a href="?view=rencana_kegiatan_humas"><i class="fa fa-tasks"></i> Rencana Kegiatan</a></li>
+						<li class="<?php echo $aktifhumas2; ?>"><a href="?view=rencana_kegiatan_humas"><i class="fa fa-tasks"></i> Rencana Kegiatan</a></li>
 						<li class="<?php echo $aktifhumas3; ?>"><a href="?view=realisasi_kegiatan_humas"><i class="fa fa-tasks"></i> Realisasi Kegiatan</a></li>
 						<li class="<?php echo $aktifhumas4; ?>"><a href="?view=monev_kegiatan_humas"><i class="fa fa-tasks"></i> Monev Kegiatan</a></li>
 						<li class="<?php echo $aktifhumas5; ?>"><a href="?view=buku_tamu"><i class="fa fa-book"></i> Buku Tamu</a></li>
 
 					</ul>
 				</li>
-					<li class="treeview <?php echo $aktiftu; ?>">
+				<li class="treeview <?php echo $aktiftu; ?>">
 					<a href="#">
 						<i class="fa fa-folder-open faa-shake animated"></i>
 						<span>Tata Usaha </span>
@@ -219,13 +219,14 @@
 						<li class="<?php echo  $aktiftu2; ?>"><a href="?view=rencana_kegiatan_tu"><i class="fa fa-tasks"></i> Rencana Kegiatan</a></li>
 						<li class="<?php echo $aktiftu3; ?>"><a href="?view=realisasi_kegiatan_tu"><i class="fa fa-tasks"></i> Realisasi Kegiatan</a></li>
 						<li class="<?php echo $aktiftu4; ?>"><a href="?view=monev_kegiatan_tu"><i class="fa fa-tasks"></i> Monev Kegiatan</a></li>
-					
+						<li class="<?php echo $aktiftu6; ?>"><a href="?view=arsip_kepsek"><i class="fa fa-briefcase"></i> Data Arsip </a></li>
+
 					</ul>
 				</li>
 				<li class="<?php echo $aktifA8; ?>"><a href="?view=guru"><i class="fa fa-user-secret"></i> Data PTK</a></li>
-			    <li><a href="index-guru.php?view=sktahunan_all"><i class="fa fa-book"></i> <span>SK Tahunan</span></a></li>
+				<li><a href="index-guru.php?view=sktahunan_all"><i class="fa fa-book"></i> <span>SK Tahunan</span></a></li>
 
-			
+
 				<li class="treeview <?php echo $aktifD; ?>">
 
 					<a href="#">
@@ -254,10 +255,10 @@
 						<li class="<?php echo $aktifD8; ?>"><a href="?view=rekapkondisikeuangan"><i class="fa fa-bookmark text-blue"></i> <span>Kondisi Keuangan</span></a></li>
 					</ul>
 				</li>
-			<!--kurikulum-->
-			<?php }else if ($_SESSION['tugas'] == '2') { ?>
+				<!--kurikulum-->
+			<?php } else if ($_SESSION['tugas'] == '2') { ?>
 
-			<li class="treeview <?php echo $kurikulum; ?>">
+				<li class="treeview <?php echo $kurikulum; ?>">
 					<a href="#">
 						<i class="fa fa-user-plus"></i> <span>Kurikulum</span>
 						<i class="fa fa-angle-left pull-right"></i>
@@ -266,14 +267,14 @@
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=program_kerja"><i class="fa fa-circle-o"></i> Program Kerja </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=rencana_kegiatan"><i class="fa fa-circle-o"></i> Rencana Kegiatan </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=realisasi_kegiatan"><i class="fa fa-circle-o"></i> Realisasi Kegiatan </a></li>
-                        <li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
-                        	<li class="<?php echo $kurikulum1; ?>"><a href="?view=prestasi_ptk"><i class="fa fa-graduation-cap"></i> Data Prestasi PTK</a></li>
+						<li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
+						<li class="<?php echo $kurikulum1; ?>"><a href="?view=prestasi_ptk"><i class="fa fa-graduation-cap"></i> Data Prestasi PTK</a></li>
 						<li class="<?php echo $kurikulum2; ?>"><a href="?view=lapprestasi_ptk"><i class="fa fa-bar-chart"></i> Rekap Prestasi PTK</a></li>
-                        <li class="<?php echo $kurikulum3; ?>"><a href="?view=bk_ptk"><i class="fa fa-heartbeat"></i> Data Pembinaan PTK </a></li>
+						<li class="<?php echo $kurikulum3; ?>"><a href="?view=bk_ptk"><i class="fa fa-heartbeat"></i> Data Pembinaan PTK </a></li>
 						<li class="<?php echo $kurikulum4; ?>"><a href="?view=lapbk_ptk"><i class="fa fa-bar-chart"></i> Rekap Pembinaan PTK</a></li>
 					</ul>
 				</li>
-				
+
 				<li class="treeview <?php echo $aktifakademik; ?>">
 					<a href="#">
 						<i class="fa fa-tags faa-shake animated"></i>
@@ -300,7 +301,7 @@
 						<li class="<?php echo $aktifabsen2; ?>"><a href="?view=absensi_guru_rekap"><i class="fa fa-calendar"></i> <span> Rekap Absen PTK</span></a></li>
 					</ul>
 				</li>
-			<!--humas-->
+				<!--humas-->
 			<?php } else if ($_SESSION['tugas'] == '4') { ?>
 				<li class="treeview <?php echo $kurikulum; ?>">
 					<a href="#">
@@ -311,12 +312,12 @@
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=program_kerja"><i class="fa fa-circle-o"></i> Program Kerja </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=rencana_kegiatan"><i class="fa fa-circle-o"></i> Rencana Kegiatan </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=realisasi_kegiatan"><i class="fa fa-circle-o"></i> Realisasi Kegiatan </a></li>
-                        <li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
+						<li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
 						<li class="<?php echo $aktifhumas5; ?>"><a href="?view=buku_tamu"><i class="fa fa-circle-o"></i> Buku Tamu</a></li>
 
 					</ul>
 				</li>
-			<!--kesiswaan-->
+				<!--kesiswaan-->
 			<?php } else if ($_SESSION['tugas'] == '3') { ?>
 				<li class="treeview <?php echo $kurikulum; ?>">
 					<a href="#">
@@ -327,18 +328,18 @@
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=program_kerja"><i class="fa fa-circle-o"></i> Program Kerja </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=rencana_kegiatan"><i class="fa fa-circle-o"></i> Rencana Kegiatan </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=realisasi_kegiatan"><i class="fa fa-circle-o"></i> Realisasi Kegiatan </a></li>
-                        <li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
-                        <li class="<?php echo $aktifZ1; ?>"><a href="?view=prestasi"><i class="fa fa-circle-o"></i> Prestasi</a></li>
+						<li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
+						<li class="<?php echo $aktifZ1; ?>"><a href="?view=prestasi"><i class="fa fa-circle-o"></i> Prestasi</a></li>
 						<li class="<?php echo $aktifZ2; ?>"><a href="?view=lapprestasi"><i class="fa fa-circle-o"></i> Rekap Prestasi Siswa</a></li>
 						<li class="<?php echo $aktifZ3; ?>"><a href="?view=bk"><i class="fa fa-circle-o"></i> Pelanggaran</a></li>
 						<li class="<?php echo $aktifZ4; ?>"><a href="?view=lapbk"><i class="fa fa-circle-o"></i> Rekap Pelanggaran Siswa</a></li>
 						<li class="<?php echo $aktifZ5; ?>"><a href="?view=tahfidz"><i class="fa fa-circle-o"></i> Tahfidz</a></li>
-                        <li class="<?php echo $aktifD1; ?>"><a href="?view=lapsiswa"><i class="fa fa-circle-o"></i><span> Lap. Data Siswa</span></a></li>
+						<li class="<?php echo $aktifD1; ?>"><a href="?view=lapsiswa"><i class="fa fa-circle-o"></i><span> Lap. Data Siswa</span></a></li>
 						<li class="<?php echo $aktifD11; ?>"><a href="?view=lapsiswaafirmasi"><i class="fa fa-circle-o"></i><span> Lap. Data Siswa Afirmasi</span></a></li>
 
-                        
-                        
-                        
+
+
+
 					</ul>
 				</li>
 				<!--sarpras-->
@@ -352,8 +353,8 @@
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=program_kerja"><i class="fa fa-circle-o"></i> Program Kerja </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=rencana_kegiatan"><i class="fa fa-circle-o"></i> Rencana Kegiatan </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=realisasi_kegiatan"><i class="fa fa-circle-o"></i> Realisasi Kegiatan </a></li>
-                        <li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
-                        <li class="<?php echo $aktifInventaris1; ?>"><a href="?view=inventaris"><i class="fa fa-circle-o"></i> Stok BHP </a></li>
+						<li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
+						<li class="<?php echo $aktifInventaris1; ?>"><a href="?view=inventaris"><i class="fa fa-circle-o"></i> Stok BHP </a></li>
 						<li class="<?php echo $aktifInventaris2; ?>"><a href="?view=inventarismasuks"><i class="fa fa-circle-o"></i> Barang Masuk</a></li>
 						<li class="<?php echo $aktifInventaris3; ?>"><a href="?view=inventariskeluar"><i class="fa fa-circle-o"></i> Barang Keluar</a></li>
 						<li class="<?php echo $aktifInventaris9; ?>"><a href="?view=inv_sumber_dana"><i class="fa fa-archive"></i> Data Sumber Dana </a></li>
@@ -374,7 +375,7 @@
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=program_kerja"><i class="fa fa-circle-o"></i> Program Kerja </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=rencana_kegiatan"><i class="fa fa-circle-o"></i> Rencana Kegiatan </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=realisasi_kegiatan"><i class="fa fa-circle-o"></i> Realisasi Kegiatan </a></li>
-                        <li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
+						<li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
 					</ul>
 				</li>
 			<?php } else if ($_SESSION['tugas'] == '10') { ?>
@@ -387,7 +388,9 @@
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=program_kerja"><i class="fa fa-circle-o"></i> Program Kerja </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=rencana_kegiatan"><i class="fa fa-circle-o"></i> Rencana Kegiatan </a></li>
 						<li class="<?php echo $kurikulum5; ?>"><a href="?view=realisasi_kegiatan"><i class="fa fa-circle-o"></i> Realisasi Kegiatan </a></li>
-                        <li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
+						<li class="<?php echo $kurikulum5; ?>"><a href="?view=monev_kegiatan"><i class="fa fa-circle-o"></i> Monev Kegiatan </a></li>
+						<li class="<?php echo $aktiftu5; ?>"><a href="?view=arsip_kategori"><i class="fa fa-briefcase"></i> Kategori Arsip </a></li>
+						<li class="<?php echo $aktiftu6; ?>"><a href="?view=arsip_data"><i class="fa fa-briefcase"></i> Data Arsip </a></li>
 					</ul>
 				</li>
 			<?php } ?>

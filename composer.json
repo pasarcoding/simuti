@@ -1,6 +1,8 @@
 {
     "require": {
         "midtrans/midtrans-php": "^2.5",
-        "phpoffice/phpspreadsheet": "^1.22"
+        "phpoffice/phpspreadsheet": "^1.22",
+        "endroid/qr-code": "^4.6",
+        "chillerlan/php-qrcode": "^5.0"
     }
 }

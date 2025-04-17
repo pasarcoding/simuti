@@ -12,7 +12,7 @@
 		</div>
 		<?php
 		switch ($_GET['view']) {
-				//menu master data
+			//menu master data
 			case 'admin':
 				$judul = "<span class='fa fa-users'></span> Manajemen Admin";
 				$aktifA = 'active';
@@ -84,7 +84,7 @@
 				$aktifM = 'active';
 				$aktifM2 = 'active';
 				break;
-				//menu kesiswaan
+			//menu kesiswaan
 			case 'prestasi':
 				$judul = "<span class='fa fa-tasks'></span> Prestasi";
 				$aktifZ = 'active';
@@ -144,7 +144,7 @@
 
 
 
-				//menu keuangan
+			//menu keuangan
 			case 'posbayar':
 				$judul = "<span class='fa fa-money'></span> Pos Bayar";
 				$aktifB = 'active';
@@ -196,7 +196,7 @@
 				$aktifn = 'active';
 				$aktifn = 'active';
 				break;
-				//menu backup&restore
+			//menu backup&restore
 			case 'restore':
 				$judul = "";
 				$aktifZ = 'active';
@@ -209,7 +209,7 @@
 				$judul = "<span class='fa fa-download'></span> Tagihan";
 				$aktifZ = 'active';
 				break;
-				//akademik
+			//akademik
 			case 'jadwalpelajaran':
 				$judul = "<span class='fa fa-book'></span> Jadwal Pelajaran";
 				$aktifakademik = 'active';
@@ -225,7 +225,7 @@
 				$aktifakademik = 'active';
 				$aktifakademik0 = 'active';
 				break;
-				//menu tabungan
+			//menu tabungan
 			case 'nasabah':
 				$judul = "<span class='fa fa-users'></span> Nasabah";
 				$aktifK = 'active';
@@ -251,7 +251,7 @@
 				$aktifK = 'active';
 				$aktifK5 = 'active';
 				break;
-				//menu bhutangpiutang
+			//menu bhutangpiutang
 
 			case 'hutangtoko':
 				$judul = "<span class='fa fa-money'></span> Hutang ";
@@ -278,7 +278,7 @@
 				$aktifZ = 'active';
 				$aktifZ4 = 'active';
 				break;
-				//kurikulum
+			//kurikulum
 			case 'prestasi_ptk':
 				$judul = "<span class='fa fa-tasks'></span>Data Prestasi PTK";
 				$kurikulum = 'active';
@@ -337,7 +337,7 @@
 				break;
 
 
-				//menu pembayaran
+			//menu pembayaran
 			case 'pembayaran':
 				$judul = "<span class='fa fa-money'></span> Transaksi Pembayaran";
 				$aktifC = 'active';
@@ -350,7 +350,7 @@
 				$judul = "<span class='fa fa-money'></span> Pembayaran Bulanan";
 				$aktifC = 'active';
 				break;
-				//inventaris
+			//inventaris
 			case 'inventaris':
 				$judul = "<span class='fa fa-money'></span> Inventaris";
 				$aktifInventaris = 'active';
@@ -423,7 +423,7 @@
 				$aktifInventaris = 'active';
 				$aktifInventaris14 = 'active';
 				break;
-				//menu laporan
+			//menu laporan
 
 			case 'lapsiswaafirmasi':
 				$judul = "<span class='fa fa-tasks'></span> Laporan Siswa Afirmasi Per Kelas";
@@ -505,7 +505,7 @@
 				$aktifabsen = 'active';
 				$aktifabsen2 = 'active';
 				break;
-				//menu home
+			//menu home
 
 			case 'program_kerja':
 				$judul = "<span class='fa fa-tasks'></span> Program Kerja";
@@ -598,6 +598,38 @@
 				$judul = "<span class='fa fa-tasks'></span> Monev Kegiatan";
 				$aktiftu = 'active';
 				$aktiftu4 = 'active';
+				break;
+			case 'arsip_kategori':
+				$judul = "<span class='fa fa-briefcase'></span> Kategori Arsip";
+				$aktiftu = 'active';
+				$aktiftu5 = 'active';
+				break;
+			case 'arsip_data':
+				$judul = "<span class='fa fa-briefcase'></span> Data Arsip";
+				$aktiftu = 'active';
+				$aktiftu6 = 'active';
+				break;
+
+
+			case 'ppdb_slider':
+				$judul = "<span class='fa fa-briefcase'></span> Data Slider";
+				$aktifppdb = 'active';
+				$aktifppdb0 = 'active';
+				break;
+			case 'ppdb_jalur':
+				$judul = "<span class='fa fa-briefcase'></span> Data Jalur Pendaftaran";
+				$aktifppdb = 'active';
+				$aktifppdb1 = 'active';
+				break;
+			case 'ppdb_gelombang':
+				$judul = "<span class='fa fa-briefcase'></span> Data Gelombang Pendaftaran";
+				$aktifppdb = 'active';
+				$aktifppdb2 = 'active';
+				break;
+			case 'daftar_titipan':
+				$judul = "<span class='fa fa-briefcase'></span> Data Pendaftaran Titipan";
+				$aktifppdb = 'active';
+				$aktifppdb3 = 'active';
 				break;
 
 			default:
@@ -755,6 +787,23 @@
 				<li class="<?php echo $aktifHome; ?>"><a href="./"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
 				<li class="<?php echo $aktifC; ?>"><a href="index.php?view=pembayaran"><i class="fa fa-money"></i> <span>Pembayaran Siswa</span></a></li>
 				<li class="<?php echo $aktifw1; ?>"><a href="index.php?view=whatsapp"><i class="fa fa-send"></i><span> Kirim Tagihan </span></a></li>
+				<li class="treeview <?php echo $aktifppdb; ?>">
+					<a href="#">
+						<i class="fa fa-building"></i>
+						<span>PPDB</span>
+						<i class="fa fa-angle-left pull-right"></i>
+					</a>
+
+					<ul class="treeview-menu">
+						<li class="<?php echo $aktifppdb0; ?>"><a href="index.php?view=ppdb_slider"><i class="fa fa-minus"></i> Slider</a></li>
+						<li class="<?php echo $aktifppdb1; ?>"><a href="index.php?view=ppdb_jalur"><i class="fa fa-minus"></i> Jalur Pendaftaran</a></li>
+						<li class="<?php echo $aktifppdb2; ?>"><a href="index.php?view=ppdb_gelombang"><i class="fa fa-minus"></i> Data Gelombang</a></li>
+						<li class="<?php echo $aktifppdb3; ?>"><a href="index.php?view=daftar_titipan"><i class="fa fa-minus"></i> Data Daftar Titipan</a></li>
+						<li class="<?php echo $aktifppdb3; ?>"><a href="index.php?view=daftar_titipan"><i class="fa fa-minus"></i> Monitoring </a></li>
+						<li class="<?php echo $aktifppdb3; ?>"><a href="index.php?view=daftar_titipan"><i class="fa fa-minus"></i> Data Petugas</a></li>
+
+					</ul>
+				</li>
 				<li class="treeview <?php echo $aktifA; ?>">
 					<a href="#">
 						<i class="fa fa-book"></i>
@@ -920,6 +969,8 @@
 						<li class="<?php echo  $aktiftu2; ?>"><a href="index.php?view=rencana_kegiatan_tu"><i class="fa fa-tasks"></i> Rencana Kegiatan</a></li>
 						<li class="<?php echo $aktiftu3; ?>"><a href="index.php?view=realisasi_kegiatan_tu"><i class="fa fa-tasks"></i> Realisasi Kegiatan</a></li>
 						<li class="<?php echo $aktiftu4; ?>"><a href="index.php?view=monev_kegiatan_tu"><i class="fa fa-tasks"></i> Monev Kegiatan</a></li>
+						<li class="<?php echo $aktiftu5; ?>"><a href="index.php?view=arsip_kategori"><i class="fa fa-briefcase"></i> Kategori Arsip </a></li>
+						<li class="<?php echo $aktiftu6; ?>"><a href="index.php?view=arsip_data"><i class="fa fa-briefcase"></i> Data Arsip </a></li>
 
 					</ul>
 				</li>

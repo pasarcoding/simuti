@@ -631,6 +631,11 @@
 				$aktifppdb = 'active';
 				$aktifppdb3 = 'active';
 				break;
+			case 'data petugas':
+				$judul = "<span class='fa fa-briefcase'></span> Data Petugas";
+				$aktifppdb = 'active';
+				$aktifppdb4 = 'active';
+				break;
 
 			default:
 				$judul = "<span class='fa fa-dashboard'></span> Dashboard";
@@ -800,7 +805,7 @@
 						<li class="<?php echo $aktifppdb2; ?>"><a href="index.php?view=ppdb_gelombang"><i class="fa fa-minus"></i> Data Gelombang</a></li>
 						<li class="<?php echo $aktifppdb3; ?>"><a href="index.php?view=daftar_titipan"><i class="fa fa-minus"></i> Data Daftar Titipan</a></li>
 						<li class="<?php echo $aktifppdb3; ?>"><a href="index.php?view=daftar_titipan"><i class="fa fa-minus"></i> Monitoring </a></li>
-						<li class="<?php echo $aktifppdb3; ?>"><a href="index.php?view=daftar_titipan"><i class="fa fa-minus"></i> Data Petugas</a></li>
+						<li class="<?php echo $aktifppdb4; ?>"><a href="index.php?view=data petugas"><i class="fa fa-minus"></i> Data Petugas</a></li>
 
 					</ul>
 				</li>

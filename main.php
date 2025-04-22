@@ -641,4 +641,9 @@ if ($_GET['view'] == 'home' or $_GET['view'] == '') {
         echo "<div class='row'>";
         include "admin/master_ppdb_titipan.php";
         echo "</div>";
+} elseif ($_GET['view'] == 'data petugas') {
+
+        echo "<div class='row'>";
+        include "admin/master_ppdb_data_petugas.php";
+        echo "</div>";
 }

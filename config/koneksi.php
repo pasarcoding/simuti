@@ -2,8 +2,8 @@
 date_default_timezone_set('Asia/Jakarta');
 $server = "localhost";
 $username = "root";
-$password = "root";
-$database = "dev-simuti";
+$password = "";
+$database = "bwy_simuti";
 
 
 // $username = "u230580836_simuti";
